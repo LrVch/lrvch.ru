@@ -1,0 +1,22 @@
+{
+  "name": "lrvch.ru",
+  "version": "0.0.0",
+  "homepage": "https://github.com/LrVch/lrvch.ru",
+  "authors": [
+    "LrVch <caden45@mail.ru>"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "jquery": "~2.1.1",
+    "normalize-scss": "normalize.scss#~3.0.2+normalize.3.0.2"
+  },
+  "overrides": {
+    "bootstrap": {
+      "main": [
+            "./dist/js/bootstrap.min.js",
+            "./dist/css/bootstrap.min.css",
+            "./dist/css/bootstrap-theme.min.css"
+          ]
+    }
+  }
+}

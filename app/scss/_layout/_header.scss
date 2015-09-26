@@ -1,8 +1,79 @@
 .page-header {
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 13px;
+  background: url("../img/bg-header.jpg");
+  &:after {
+    position: absolute;
+    bottom: 0;
+    content: '';
+    width: 100%;
+    height: 7px;
+    border-bottom: 1px solid map-get($clrs, brown-light);
+    background: map-get($clrs, white);
+  }
   &__inner {
     @extend %header;
     @extend %clearfix;
-
+    @extend %debug;
+  }
+  &__logo {
+    float: left;
+    margin-left: 14px;
+    &-img {
+      width: 93px;
+      height: 71px;
+    }
+  }
+  &__social {
+    float: right;
+  }
+  &__list {
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    &-item {
+      display: inline-block;
+      margin-right: 15px;
+      margin-top: 16px;
+      vertical-align: top;
+      list-style-type: none;
+      font-size: $font-base-size;
+      text-indent: -10000px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    &-link {
+      display: block;
+      width: 38px;
+      height: 38px;
+      background-image: url("../img/spritesheet.png");
+      background-repeat: no-repeat;
+      &--fb {
+        background-position: -12px -188px;
+        &:hover {
+          background-position: -12px -252px;
+        }
+      }
+      &--vk {
+        background-position: -12px -1000px;
+        &:hover {
+          background-position: -12px -1064px;
+        }
+      }
+      &--tw {
+        background-position: -12px -872px;
+        &:hover {
+          background-position: -12px -936px;
+        }
+      }
+      &--gh {
+        background-position: -12px -316px;
+        &:hover {
+          background-position: -12px -380px;
+        }
+      }
+    }
   }
 }
-

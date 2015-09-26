@@ -6,6 +6,8 @@ body {
   min-height: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: url("../img/bg-main.jpg") no-repeat center top;
+  background-size: cover;
 }
 
 %container {
@@ -15,11 +17,11 @@ body {
 }
 
 %header {
-  width: 1194px;
+  width: 1210px;
   padding: 0 10px;
   margin: 0 auto;
 }
 
-%debug {
-  outline: 1px solid #f0f;
-}
+//%debug {
+//  outline: 1px solid #f0f;
+//}

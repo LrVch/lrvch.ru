@@ -1,0 +1,137 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-circle {
+    width: 4px;
+    height: 5px;
+    background-position: -12px -12px;
+}
+
+.sprite-icon-arrow {
+    width: 10px;
+    height: 38px;
+    background-position: -12px -41px;
+}
+
+.sprite-icon-bag {
+    width: 21px;
+    height: 19px;
+    background-position: -12px -103px;
+}
+
+.sprite-icon-cloud- {
+    width: 25px;
+    height: 18px;
+    background-position: -12px -146px;
+}
+
+.sprite-icon-fb {
+    width: 38px;
+    height: 40px;
+    background-position: -12px -188px;
+}
+
+.sprite-icon-fb--hover {
+    width: 38px;
+    height: 40px;
+    background-position: -12px -252px;
+}
+
+.sprite-icon-gh {
+    width: 38px;
+    height: 40px;
+    background-position: -12px -316px;
+}
+
+.sprite-icon-gh--hover {
+    width: 38px;
+    height: 40px;
+    background-position: -12px -380px;
+}
+
+.sprite-icon-hat {
+    width: 27px;
+    height: 18px;
+    background-position: -12px -444px;
+}
+
+.sprite-icon-key-intro {
+    width: 21px;
+    height: 19px;
+    background-position: -12px -486px;
+}
+
+.sprite-icon-list {
+    width: 15px;
+    height: 20px;
+    background-position: -12px -529px;
+}
+
+.sprite-icon-lock {
+    width: 18px;
+    height: 21px;
+    background-position: -12px -573px;
+}
+
+.sprite-icon-lock--unlock {
+    width: 23px;
+    height: 21px;
+    background-position: -12px -618px;
+}
+
+.sprite-icon-mail {
+    width: 16px;
+    height: 12px;
+    background-position: -12px -663px;
+}
+
+.sprite-icon-mail-intro {
+    width: 22px;
+    height: 16px;
+    background-position: -12px -699px;
+}
+
+.sprite-icon-pen {
+    width: 21px;
+    height: 21px;
+    background-position: -12px -739px;
+}
+
+.sprite-icon-phone {
+    width: 16px;
+    height: 21px;
+    background-position: -12px -784px;
+}
+
+.sprite-icon-skype {
+    width: 19px;
+    height: 19px;
+    background-position: -12px -829px;
+}
+
+.sprite-icon-tw {
+    width: 38px;
+    height: 40px;
+    background-position: -12px -872px;
+}
+
+.sprite-icon-tw--hover {
+    width: 38px;
+    height: 40px;
+    background-position: -12px -936px;
+}
+
+.sprite-icon-vk {
+    width: 38px;
+    height: 40px;
+    background-position: -12px -1000px;
+}
+
+.sprite-icon-vk---hover {
+    width: 38px;
+    height: 40px;
+    background-position: -12px -1064px;
+}

@@ -1,12 +1,13 @@
+@import "_normalize";
 @import "_variables";
 @import "_mixins";
 @import "_helpers";
-@import "../bower/normalize-css/normalize.css";
 @import "_styleguide/_typography";
 @import "_styleguide/_btns";
 @import "_styleguide/_forms";
 @import "_components/_oldbrowser";
 @import "_layout/_base";
+@import "_layout/_grid";
 @import "_layout/_header";
 @import "_layout/_footer";
 @import "_blocks/_main-menu";

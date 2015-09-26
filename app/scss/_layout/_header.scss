@@ -1,4 +1,8 @@
 .page-header {
+  &__inner {
+    @extend %header;
+    @extend %clearfix;
 
+  }
 }
 

@@ -1,0 +1,22 @@
+.btn {
+  //@extend .debug;
+  @extend %no-link;
+  @extend %no-btn;
+  //display: inline-block;
+  //vertical-align: top;
+  //margin: 0 auto;
+  //padding: 11px 20px;
+  //border: 2px solid map-get($clrs, light-blue);
+  //border-radius: 11px;
+  //font-family: $font-base-family;
+  //font-size: $font-size-regular;
+  //font-weight: $weight-normal;
+  //font-style: $font-style-italic;
+  //line-height: $font-size-regular;
+  //color: map-get($clrs, light-blue);
+  //background: transparent;
+  &:hover {
+    color: map-get($clrs,  white);
+    background: map-get($clrs, light-blue);
+  }
+}

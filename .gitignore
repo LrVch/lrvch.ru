@@ -44,6 +44,6 @@ node_modules
 # Frontend ignore files #
 #########################
 .tmp
-app/bower/bower_components
+app/bower
 *.map
 dist

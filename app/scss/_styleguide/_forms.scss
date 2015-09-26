@@ -1,0 +1,14 @@
+%resetFieldset {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+%formGroup {
+    @extend %resetFieldset;
+    font-size: 0;
+}
+
+%textField {
+    
+}

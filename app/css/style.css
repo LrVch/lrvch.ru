@@ -389,29 +389,29 @@ a:focus {
 
 @font-face {
   font-family: 'open_sanssemibold';
-  src: url("../../fonts/opensans-semibold-webfont.eot");
-  src: url("../../fonts/../../fonts/opensans-semibold-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/opensans-semibold-webfont.woff2") format("woff2"), url("../../fonts/opensans-semibold-webfont.woff") format("woff"), url("../../fonts/opensans-semibold-webfont.ttf") format("truetype"), url("../../fonts/opensans-semibold-webfont.svg#open_sanssemibold") format("svg");
+  src: url("../fonts/opensans-semibold-webfont.eot");
+  src: url("../fonts/opensans-semibold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/opensans-semibold-webfont.woff2") format("woff2"), url("../fonts/opensans-semibold-webfont.woff") format("woff"), url("../fonts/opensans-semibold-webfont.ttf") format("truetype"), url("../fonts/opensans-semibold-webfont.svg#open_sanssemibold") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'open_sanslight';
-  src: url("../../fonts/opensans-light-webfont.eot");
-  src: url("../../fonts/opensans-light-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/opensans-light-webfont.woff2") format("woff2"), url("../../fonts/opensans-light-webfont.woff") format("woff"), url("../../fonts/opensans-light-webfont.ttf") format("truetype"), url("../../fonts/opensans-light-webfont.svg#open_sanslight") format("svg");
+  src: url("../fonts/opensans-light-webfont.eot");
+  src: url("../fonts/opensans-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/opensans-light-webfont.woff2") format("woff2"), url("../fonts/opensans-light-webfont.woff") format("woff"), url("../fonts/opensans-light-webfont.ttf") format("truetype"), url("../fonts/opensans-light-webfont.svg#open_sanslight") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'open_sansregular';
-  src: url("../../fonts/opensans-regular-webfont.eot");
-  src: url("../../fonts/opensans-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/opensans-regular-webfont.woff2") format("woff2"), url("../../fonts/opensans-regular-webfont.woff") format("woff"), url("../../fonts/opensans-regular-webfont.ttf") format("truetype"), url("../../fonts/opensans-regular-webfont.svg#open_sansregular") format("svg");
+  src: url("../fonts/opensans-regular-webfont.eot");
+  src: url("../fonts/opensans-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/opensans-regular-webfont.woff2") format("woff2"), url("../fonts/opensans-regular-webfont.woff") format("woff"), url("../fonts/opensans-regular-webfont.ttf") format("truetype"), url("../fonts/opensans-regular-webfont.svg#open_sansregular") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'open_sansbold';
-  src: url("../../fonts/opensans-bold-webfont.eot");
-  src: url("../../fonts/opensans-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/opensans-bold-webfont.woff2") format("woff2"), url("../../fonts/opensans-bold-webfont.woff") format("woff"), url("../../fonts/opensans-bold-webfont.ttf") format("truetype"), url("../../fonts/opensans-bold-webfont.svg#open_sansbold") format("svg");
+  src: url("../fonts/opensans-bold-webfont.eot");
+  src: url("../fonts/opensans-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/opensans-bold-webfont.woff2") format("woff2"), url("../fonts/opensans-bold-webfont.woff") format("woff"), url("../fonts/opensans-bold-webfont.ttf") format("truetype"), url("../fonts/opensans-bold-webfont.svg#open_sansbold") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -430,6 +430,7 @@ body {
   font-family: "open_sanssemibold", Arial, Helvetica, Garuda, sans-serif;
   font-size: 14px;
   height: 100%;
+  width: 1240px;
   min-height: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -531,12 +532,14 @@ body {
 .menu__list {
   margin: 0;
   margin-right: 59px;
+  margin-bottom: 34px;
   padding: 0;
+  border-radius: 0 0 4px 4px;
   box-shadow: 0px 3px 5px -1px #d5cf95; }
   .menu__list-item {
     list-style-type: none;
     text-align: left;
-    text-shadow: 1px 1px 3px #eae9e9;
+    text-shadow: 1px 1px 2px #eae9e9;
     border: 1px solid #bababa;
     background-image: linear-gradient(to bottom, #f7f7f7, #e5e3e2);
     overflow: hidden; }
@@ -558,7 +561,8 @@ body {
       background-image: linear-gradient(to bottom, #7de8cd, #3fb79a);
       box-shadow: inset 0 1px 1px #a5efdd; }
       .menu__list-item--active .menu__list-link {
-        color: #1e7465; }
+        color: #1e7465;
+        text-shadow: 1px 1px 2px #d1cccc; }
       .menu__list-item--active:hover {
         background-image: linear-gradient(to bottom, #7de8cd, #3fb79a);
         box-shadow: inset 0 1px 1px #a5efdd; }
@@ -569,3 +573,78 @@ body {
     color: #727070;
     line-height: 20px;
     text-decoration: none; }
+
+.contacts__list {
+  margin: 0;
+  margin-right: 59px;
+  padding: 0;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0px 3px 5px -1px #d5cf95; }
+  .contacts__list-item {
+    padding: 7px 0 8px 97px;
+    list-style-type: none;
+    text-align: left;
+    color: #727070;
+    text-shadow: 1px 1px 3px #eae9e9;
+    border: 1px solid #d6d5d3;
+    background: linear-gradient(to bottom, #fff, #f7f6f6);
+    overflow: hidden; }
+    .contacts__list-item:first-child {
+      padding: 7px 0 8px 26px;
+      border-top-color: #e7bf6f;
+      border-right-color: #cfa44f;
+      border-left-color: #cfa44f;
+      border-bottom-color: #cfa44f;
+      border-radius: 4px 4px 0 0;
+      font-size: 20px;
+      color: #d0982c;
+      text-shadow: 1px 1px 0px #d3d3d3;
+      background: linear-gradient(to bottom, #f4ce82, #dfb866);
+      box-shadow: inset 0 1px 1px #f8dda7; }
+      .contacts__list-item:first-child:hover {
+        background: linear-gradient(to bottom, #f4ce82, #dfb866); }
+    .contacts__list-item:last-child {
+      border-radius: 0 0 4px 4px;
+      color: #727070; }
+    .contacts__list-item--mail {
+      padding: 0; }
+    .contacts__list-item-img {
+      position: relative; }
+      .contacts__list-item-img:before {
+        position: absolute;
+        content: "";
+        top: 50%;
+        margin-top: -18px;
+        left: -50px;
+        width: 10px;
+        height: 36px;
+        background-image: url("../img/spritesheet.png");
+        background-repeat: no-repeat;
+        background-position: -12px -41px; }
+      .contacts__list-item-img:after {
+        position: absolute;
+        content: "";
+        top: 50%;
+        margin-top: -9px;
+        left: -80px;
+        width: 20px;
+        height: 20px;
+        background-image: url("../img/spritesheet.png");
+        background-repeat: no-repeat; }
+      .contacts__list-item-img--mail:after {
+        background-position: -12px -659px; }
+      .contacts__list-item-img--phone:after {
+        background-position: -12px -784px; }
+      .contacts__list-item-img--nik:after {
+        background-position: -12px -829px; }
+    .contacts__list-item:hover {
+      background: linear-gradient(to bottom, #fff 20%, #f2e7d0); }
+  .contacts__list-link {
+    display: block;
+    padding: 7px 0 8px 97px;
+    color: #727070;
+    line-height: 20px;
+    text-decoration: none; }
+    .contacts__list-link:hover {
+      text-decoration: underline;
+      background: linear-gradient(to bottom, #fff 20%, #f2e7d0); }

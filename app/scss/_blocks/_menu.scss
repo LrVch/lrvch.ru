@@ -2,16 +2,20 @@
   &__list {
     margin: 0;
     margin-right: 59px;
+    margin-bottom: 34px;
     padding: 0;
+    border-radius: 0 0 4px 4px;
     box-shadow: 0px 3px 5px -1px #d5cf95;
     &-item {
       list-style-type: none;
       text-align: left;
-      text-shadow: 1px 1px 3px map-get($clrs, gray-light-extra);
+      text-shadow: 1px 1px 2px map-get($clrs, gray-light-extra);
       border: 1px solid map-get($clrs, grey);
+      //border-top: none;
       background-image: linear-gradient(to bottom, map-get($clrs, grey-lighten), map-get($clrs, grey-light));
       overflow: hidden;
       &:first-child {
+        //border-top: 1px solid map-get($clrs, grey);
         border-radius: 4px 4px 0 0;
         border-bottom: none;
       }
@@ -27,6 +31,7 @@
       &--active {
         .menu__list-link {
           color: map-get($clrs, green-darken);
+          text-shadow: 1px 1px 2px #d1cccc;
         }
         border-left-color: map-get($clrs, green-dark);
         border-right-color: map-get($clrs, green-dark);

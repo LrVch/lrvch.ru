@@ -27,19 +27,34 @@ $weight-bold: 700;
  
 $clrs: ( 
   white: #fff,
+  white-light: #fbfbfb,
+  white-dark: #f7f6f6,
+  //
+  pink-light: #f2e7d0,
+  //
   grey: #bababa,
   grey-lighten: #f7f7f7,
   grey-light: #e5e3e2,
-  brown-light: #ddce9b,
   grey-hover: #e4e3e3,
+  gray-light-extra: #eae9e9,
+  gray-menu: #727070,
+  light-gray: #737373,
+  grey-extra-light: #d6d5d3,
+  //
+  dark: #727070,
+  //
+  brown-light: #ddce9b,
+  brown-lighten: #f4ce82,
+  brown-darken: #dfb866,
+  brown-dark: #e7bf6f,
+  brown-darken-dark: #cfa44f,
+  brown-menu: #d0982c,
+  brown-extra-dark: #cfa44f,
+  //
   green-hover-light: #7de8cd,
   green-hover-dark: #3fb79a,
   grey-hover-dark: #bebdbd,
   green-dark: #3da98e,
-  green-darken: #1e7465,
-  gray-light-extra: #eae9e9,
   green-light: #66dbbe,
-  dark: #727070,
-  light-gray: #737373
-  
+  green-darken: #1e7465
 );

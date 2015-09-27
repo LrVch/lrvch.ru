@@ -30,14 +30,12 @@
   font-style: normal;
 }
 
-//%title-block {
-//  font-size: $font-size-biggest;
-//  font-weight: $weight-normal;
-//  line-height: $font-size-biggest - 4;
-//  color: map-get($clrs, light-blue);
-//  text-transform: uppercase;
-//}
-//
+%title-block {
+  font-size: $font-size-big;
+  line-height: $font-size-big;
+  color: map-get($clrs, grey-title);
+}
+
 //%title-section {
 //  font-size: $font-size-big-large;
 //  font-weight: $weight-normal;

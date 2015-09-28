@@ -10,19 +10,22 @@
   <meta name="author" content="">
   <link rel="stylesheet" href="css/style.mim.css">
   <title>LrVch</title>
-  <!--<script src="bower/modernizr/src/Modernizr.js"></script>-->
+  <link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16">
+  <script src="bower/modernizr/modernizr.js"></script>
 </head>
 
 <body>
   <!--[if lt IE 9]>
-  <p class="browsehappy">Ваш браузер <strong>устарел</strong>. Пожалуйста <a href="http://browserhappy.com/">обновие</a> его</p>
+  <p class="browsehappy">Ваш браузер <strong>устарел</strong>. Пожалуйста <a href="http://browserhappy.com/" target="_blank">обновие</a> его</p>
   <![endif]-->
 
   <!-- header -->
   <header class="page-header">
     <div class="page-header__inner">
       <div class="page-header__logo">
+       <a href="index.html" class="page-header__logo-link">
         <img class="page-header__logo-img" src="img/icon-logo.png" alt="loftschool">
+        </a>
       </div>
       <div class="page-header__social">
         <ul class="page-header__list">
@@ -67,7 +70,7 @@
             <div class="main-info__inner">
               <div class="main-info__img-wrapper">
                 <div class="main-info__img-inner">
-                  <img src="http://lorempixel.com/134/134/" alt="author" class="main-info__img">
+                  <img src="img/user.png" alt="author" class="main-info__img">
                 </div>
               </div>
               <div class="main-info__desc">
@@ -95,48 +98,48 @@
           </article>
 
           <section class="experience">
-            <h1 class="experience__title">Опыт работы</h1>
+            <h2 class="experience__title">Опыт работы</h2>
             <ul class="experience__list">
               <li class="experience__list-item experience__list-item--work">
                 <ul class="experience__list-inner">
-                  <li class="experience__item-place">ИП Боровицкий" - Продавец дисков</li>
-                  <li class="experience__item-date">Сентябрь 2005 - Август 2008</li>
+                  <li class="experience__item-inner experience__item-inner--place">Инженер-конструктор ФГУП завод им. Козицкого</li>
+                  <li class="experience__item-inner">2006 - 2008</li>
                 </ul>
               </li>
               <li class="experience__list-item experience__list-item--work">
                 <ul class="experience__list-inner">
-                  <li class="experience__item-place">"ООО Системы безопастности" - Системный администратор</li>
-                  <li class="experience__item-date">Июнь 2008 - Июль 2010</li>
+                  <li class="experience__item-inner experience__item-inner--place">Туда-сюда, опять туда</li>
+                  <li class="experience__item-inner ">безвременно</li>
                 </ul>
               </li>
               <li class="experience__list-item experience__list-item--work">
                 <ul class="experience__list-inner">
-                  <li class="experience__item-place">"Магнит, Розничная сеть" - Ведущий аналитик по внедрению Oracle Web Center</li>
-                  <li class="experience__item-date">Август 2011 - Октябрь 2012</li>
+                  <li class="experience__item-inner experience__item-inner--place">Инженер-конструктор ОНИИП</li>
+                  <li class="experience__item-inner">2011-2013</li>
                 </ul>
               </li>
             </ul>
           </section>
 
           <section class="experience">
-            <h1 class="experience__title">Опыт работы</h1>
+            <h2 class="experience__title">Образование</h2>
             <ul class="experience__list">
               <li class="experience__list-item experience__list-item--school">
                 <ul class="experience__list-inner">
-                  <li class="experience__item-place">Полное среднее. Физико-математический лицей № 30</li>
-                  <li class="experience__item-date">1994 - 2004</li>
+                  <li class="experience__item-inner experience__item-inner--place">Школа № 98</li>
+                  <li class="experience__item-inner">1990 - 2001</li>
                 </ul>
               </li>
               <li class="experience__list-item experience__list-item--university">
                 <ul class="experience__list-inner">
-                  <li class="experience__item-place">Незаконченное высшее. СПБГУ ИТМО</li>
-                  <li class="experience__item-date">Октябрь 2012 - по настоящее время</li>
+                  <li class="experience__item-inner experience__item-inner--place">Омский государственный технический университет</li>
+                  <li class="experience__item-inner">2001 - 2006</li>
                 </ul>
               </li>
               <li class="experience__list-item experience__list-item--current">
                 <ul class="experience__list-inner">
-                  <li class="experience__item-place">Курсы Loftschool.ru</li>
-                  <li class="experience__item-date">Ноябрь 2014 - по настоящее время</li>
+                  <li class="experience__item-inner experience__item-inner--place">Курсы Loftschool.ru</li>
+                  <li class="experience__item-inner">сентябрь 2015 - по настоящее время</li>
                 </ul>
               </li>
             </ul>
@@ -146,22 +149,38 @@
 
       </div>
     </div>
-  </section>
-  <!-- END content -->
 
-  <!-- footer -->
+    <!-- footer -->
   <section class="page-footer">
     <div class="page-footer__inner">
       <div class="row">
-        <div class="page-footer__intro col s-3">
-          <span class="page-footer__enter">Вход</span>
+        <div class="page-footer__intro">
+          <a class="page-footer__enter" href="login.html">Вход</a>
         </div>
-        <div class="page-footer__copy col s-9">
+        <div class="page-footer__copy">
           <p class="page-footer__copy-text">&copy; 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его!</p>
         </div>
       </div>
     </div>
   </section>
+  <!-- END footer -->
+
+  </section>
+  <!-- END content -->
+
+  <!-- footer -->
+  <!--<section class="page-footer">
+    <div class="page-footer__inner">
+      <div class="row">
+        <div class="page-footer__intro">
+          <a class="page-footer__enter" href="login.html">Вход</a>
+        </div>
+        <div class="page-footer__copy">
+          <p class="page-footer__copy-text">&copy; 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его!</p>
+        </div>
+      </div>
+    </div>
+  </section>-->
   <!-- END footer -->
 
 

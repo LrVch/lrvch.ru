@@ -1,18 +1,21 @@
 html,
 body {
-  font-family: $font-base-family;
-  font-size: $font-base-size;
+  min-width: 1230px;
   height: 100%;
   min-height: 100%;
+  font-family: $font-base-family;
+  font-size: $font-base-size;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  //position: relative;
+  //min-width: 1230px;
   background: url("../img/bg-main.jpg") no-repeat center top;
   background-size: cover;
 }
 
-body {
-  min-width: 1240px;
-}
 
 %container {
   width: 960px;
@@ -25,4 +28,7 @@ body {
   padding: 0 10px;
   margin: 0 auto;
 }
-//%debug {  outline: 1px solid #f0f;}
+
+//%debug {
+//  outline: 1px solid #f0f;
+//}

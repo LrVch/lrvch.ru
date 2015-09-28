@@ -1,3 +1,51 @@
-.footer {
-  
+.page-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: linear-gradient(to bottom, map-get($clrs, white), map-get($clrs, white-lighten));
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff',
+            endColorstr='#fbfbfb',GradientType=0);
+  &__inner {
+    @extend %container;
+  }
+  &__intro {
+    float: left;
+    padding-left: 194px;
+  }
+  &__enter {
+    position: relative;
+    font-family: $font-family-bold;
+    font-size: 12px;
+    color: map-get($clrs, grey-enter);
+    text-transform: uppercase;
+    text-decoration: none;
+    &:before {
+      position: absolute;
+      left: -27px;
+      top: -2;
+      content: "";
+      width: 25px;
+      height: 22px;
+      background: url("../img/spritesheet.png") no-repeat -12px -573px;
+    }
+    &:hover {
+      &:before {
+        background: url("../img/spritesheet.png") no-repeat -12px -618px;
+      }
+    }
+  }
+  &__copy {
+    float: left;
+    padding-left: 63px;
+  }
+  &__copy-text {
+    margin: 0;
+    padding: 0;
+    font-family: $font-family-light;
+    font-size: $font-size-small;
+    color: map-get($clrs, gray-menu);
+    line-height: 23px;
+  }
 }

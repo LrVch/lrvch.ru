@@ -13,6 +13,8 @@
       border: 1px solid map-get($clrs, grey);
       //border-top: none;
       background-image: linear-gradient(to bottom, map-get($clrs, grey-lighten), map-get($clrs, grey-light));
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f7f7f7',
+            endColorstr='#e5e3e2',GradientType=0);
       overflow: hidden;
       &:first-child {
         //border-top: 1px solid map-get($clrs, grey);
@@ -26,6 +28,8 @@
       &:hover {
         border-bottom-color: map-get($clrs, grey-hover-dark);
         background-image: linear-gradient(to bottom, map-get($clrs, grey-hover), map-get($clrs, grey-hover-dark));
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e4e3e3',
+            endColorstr='#bebdbd',GradientType=0);
         box-shadow: inset 0 4px 4px #e8e7e7;
       }
       &--active {
@@ -38,9 +42,13 @@
         border-bottom: 1px solid map-get($clrs, green-dark) !important;
         border-top: 1px solid map-get($clrs, green-light) !important;
         background-image: linear-gradient(to bottom, map-get($clrs, green-hover-light), map-get($clrs, green-hover-dark));
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7de8cd',
+            endColorstr='#3fb79a',GradientType=0);
         box-shadow: inset 0 1px 1px #a5efdd;
         &:hover {
           background-image: linear-gradient(to bottom, map-get($clrs, green-hover-light), map-get($clrs, green-hover-dark));
+          filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7de8cd',
+            endColorstr='#3fb79a',GradientType=0);
           box-shadow: inset 0 1px 1px #a5efdd;
         }
       }

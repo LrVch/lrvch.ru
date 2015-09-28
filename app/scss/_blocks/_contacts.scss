@@ -15,6 +15,8 @@
       border: 1px solid map-get($clrs, grey-extra-light);
       //border-top: none;
       background: linear-gradient(to bottom, map-get($clrs, white), map-get($clrs, white-dark));
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff',
+            endColorstr='#f7f6f6',GradientType=0);
       overflow: hidden;
       z-index: 2;
       &:first-child {
@@ -28,11 +30,15 @@
         color: map-get($clrs, brown-menu);
         text-shadow: 1px 1px 0px #d3d3d3;
         background: linear-gradient(to bottom, map-get($clrs, brown-lighten), map-get($clrs, brown-darken));
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f4ce82',
+            endColorstr='#dfb866',GradientType=0);
         box-shadow: inset 0 1px 1px #f8dda7,
                           0 1px 3px 0px #bcbbba;
         z-index: 3;
         &:hover {
           background: linear-gradient(to bottom, map-get($clrs, brown-lighten), map-get($clrs, brown-darken));
+          filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f4ce82',
+            endColorstr='#dfb866',GradientType=0);
         }
       }
       &:last-child {
@@ -44,6 +50,7 @@
       }
       &-img {
         position: relative;
+        //padding: 7px 0 8px 97px;
         &:before {
           position: absolute;
           content: "";
@@ -86,6 +93,8 @@
       }
       &:hover {
         background: linear-gradient(to bottom, map-get($clrs, white) 20%, map-get($clrs, pink-light));
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff',
+            endColorstr='#f2e7d0',GradientType=0);
       }
     }
     &-link {
@@ -97,6 +106,7 @@
       &:hover {
         text-decoration: underline;
         background: linear-gradient(to bottom, map-get($clrs, white) 20%, map-get($clrs, pink-light));
+
       }
     }
   }

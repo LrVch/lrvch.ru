@@ -20,7 +20,7 @@ gulp.task("sass", function () {
 gulp.task('minifyCSS', function () {
   return gulp.src('app/css/style.css')
     .pipe(autoprefixer({
-      browsers: ['last 2 versions', "ie 9"],
+      browsers: ['last 2 versions', "ie 8"],
       cascade: false
     }))
     .pipe(minifyCss())

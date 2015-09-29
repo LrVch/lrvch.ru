@@ -433,7 +433,7 @@ a:focus {
 
 html,
 body {
-  min-width: 1230px;
+  min-width: 980px;
   height: 100%;
   min-height: 100%;
   font-family: "open_sanssemibold", Arial, Helvetica, Garuda, sans-serif;
@@ -450,7 +450,7 @@ body {
   margin: 0 auto; }
 
 .page-header__inner {
-  width: 1210px;
+  max-width: 1210px;
   padding: 0 10px;
   margin: 0 auto; }
 

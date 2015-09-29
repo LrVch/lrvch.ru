@@ -10,18 +10,22 @@
   <meta name="author" content="">
   <link rel="stylesheet" href="css/style.mim.css">
   <title>LrVch</title>
-  <script src="bower/modernizr/src/Modernizr.js"></script>
+  <link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16">
+  <script src="bower/modernizr/modernizr.js"></script>
 </head>
 
 <body>
-  <!--[if lt IE 8]>
-  <p class="browsehappy">Ваш браузер <strong>устарел</strong>. Пожалуйста <a href="http://browserhappy.com/">обновие</a> его</p>
+  <!--[if lt IE 9]>
+  <p class="browsehappy">Ваш браузер <strong>устарел</strong>. Пожалуйста <a href="http://browserhappy.com/" target="_blank">обновие</a> его</p>
   <![endif]-->
+
   <!-- header -->
   <header class="page-header">
     <div class="page-header__inner">
       <div class="page-header__logo">
-        <img class="page-header__logo-img" src="img/icon-logo.png" alt="loftschool">
+        <a href="index.html" class="page-header__logo-link">
+          <img class="page-header__logo-img" src="img/icon-logo.png" alt="loftschool">
+        </a>
       </div>
       <div class="page-header__social">
         <ul class="page-header__list">
@@ -39,18 +43,100 @@
   <section class="content">
     <div class="content__inner">
       <div class="row">
-        <aside class="menu col s-4">
+        <div class="left-col">
+          <aside class="main-menu">
+            <!--top menu-->
+            <ul class="menu__list">
+              <li class="menu__list-item"><a href="index.html" class="menu__list-link  ">Обо мне</a></li>
+              <li class="menu__list-item  menu__list-item--active"><a href="experience.html" class="menu__list-link">Мои Работы</a></li>
+              <li class="menu__list-item  "><a href="contact.html" class="menu__list-link">Обратная связь</a></li>
 
-        </aside>
-        <section class="about col s-8">
-          ds
-        </section>
+            </ul>
+            <!-- END top menu-->
 
+            <!-- bottom menu-->
+            <ul class="contacts__list">
+              <li class="contacts__list-item  contacts__list-item--head">Контакты</li>
+              <li class="contacts__list-item contacts__list-item--mail"><a class="contacts__list-link" href="mailto:caden45@mail.ru"><span class="contacts__list-item-img contacts__list-item-img--mail">caden45@mail.ru</span></a></li>
+              <li class="contacts__list-item"><span class="contacts__list-item-img contacts__list-item-img--phone">+79136201199</span></li>
+              <li class="contacts__list-item"><span class="contacts__list-item-img contacts__list-item-img--nik">caden43</span></li>
+            </ul>
+            <!-- END bottom menu-->
+          </aside>
+        </div>
+        <div class="right-col">
+          <section class="works">
+            <h2 class="works__title">Мои работы</h2>
+            <div class="works__inner">
+              <ul class="works__list">
+
+                <li class="works__list-item">
+                  <div class="works__img-wrapper">
+                    <div class="works__anim-top"></div>
+                    <div class="works__anim-bottom"></div>
+                    <a href="#" class="works__desc">Подробнее</a>
+                    <img src="img/foto-1.jpg" alt="work-1" class="works__img">
+                  </div>
+                  <h2 class="works__item-title">a-industry.ru</h2>
+                  <p class="works__item-text">Корпоративный и в тоже время продающий сайт строительной компании a-industry.</p>
+                </li>
+
+                <li class="works__list-item">
+                  <div class="works__img-wrapper">
+                    <img src="img/foto-2.jpg" alt="work-2" class="works__img">
+                  </div>
+                  <h2 class="works__item-title">домгазобетон.рф</h2>
+                  <p class="works__item-text">Продающая страница для компании ledenland.</p>
+                </li>
+
+                <li class="works__list-item">
+                  <div class="works__img-wrapper">
+                    <img src="img/foto-3.jpg" alt="work-3" class="works__img">
+                  </div>
+                  <h2 class="works__item-title">crmconsulting.biz</h2>
+                  <p class="works__item-text">Лендинг компании «СRM Consulting» специализирующейся на точной настройке Битрикс24 под бизнес.</p>
+                </li>
+
+                <li class="works__list-item">
+                  <div class="works__img-wrapper">
+                    <img src="img/foto-4.jpg" alt="work-4" class="works__img">
+                  </div>
+                  <h2 class="works__item-title">landingsloft.ru</h2>
+                  <p class="works__item-text">Сайт по услугам разработки продающих лендингов.</p>
+                </li>
+
+                <li class="works__list-item">
+                  <div class="works__img-wrapper">
+                    <img src="img/foto-5.jpg" alt="" class="works__img">
+                  </div>
+                  <h2 class="works__item-title">yasnow.biz</h2>
+                  <p class="works__item-text">Landing page по продажи франшизы снежного бизнеса.</p>
+                </li>
+
+              </ul>
+            </div>
+          </section>
+        </div>
       </div>
     </div>
+
+    <!-- footer -->
+    <section class="page-footer">
+      <div class="page-footer__inner">
+        <div class="row">
+          <div class="page-footer__intro">
+            <a class="page-footer__enter" href="login.html">Вход</a>
+          </div>
+          <div class="page-footer__copy">
+            <p class="page-footer__copy-text">&copy; 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END footer -->
+
   </section>
   <!-- END content -->
-
 
   <script src="bower/jquery/jquery.js"></script>
   <script src="js/script.js"></script>

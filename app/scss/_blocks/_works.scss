@@ -3,6 +3,7 @@
   color: map-get($clrs, gray-menu);
   background: map-get($clrs, grey-work-bg);
   border-radius: 5px 5px 7px 7px;
+  font-family: $font-family-bold;
   box-shadow: 0px 3px 6px -3px #d5cf95;
   &__title {
     margin: 0;
@@ -17,6 +18,7 @@
     border-radius: 5px 5px 0 0;
     background: linear-gradient(to bottom, map-get($clrs, dark-grey), map-get($clrs, dark-dark));
     //filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a9a7a7', endColorstr='#7b7979', GradientType=0);
+    font-family: $font-base-family;
   }
   &__inner {
     min-height: 703px;
@@ -38,7 +40,10 @@
     border-radius: 6px;
     background: map-get($clrs, white);
     overflow: hidden;
-    cursor: default;;
+    cursor: default;
+    &--last {
+      border-bottom-color: #d3d3d3;
+    }
     &:hover {
       .works__anim-top {
         left: 0;
@@ -121,5 +126,44 @@
     font-family: $font-family-light;
     font-size: $font-size-small;
     text-align: center;
+  }
+  &__link {
+    position: relative;
+    display: block;
+    padding-top: 91px;
+    padding-bottom: 23px;
+    font-family: $font-family-bold;
+    font-size: $font-base-size;
+    text-align: center;  
+    color: map-get($clrs, gray-menu);
+    text-decoration: none;
+    background: linear-gradient(to bottom, #faf9f9, #e9e7e6);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#faf9f9', endColorstr='#e9e7e6', GradientType=0);
+    box-shadow: inset 0 5px 7px #fefefd;
+    &:before {
+      position: absolute;
+      content: "";
+      top: 26px;
+      left: 50%;
+      margin-left: -26px;
+      width: 53px;
+      height: 53px;
+      border-radius: 50%;
+      background-color: #f7f7f7;
+      background-image: url("../img/spritesheet.png");
+      background-repeat: no-repeat;
+      background-position: -26px 18px;
+      box-shadow: inset 1px 1px map-get($clrs, grey-skill), inset -1px -1px map-get($clrs, white-light);
+    }
+    &:hover {
+      background: linear-gradient(to bottom, #e8e7e7, #bfbdbd);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e8e7e7', endColorstr='#bfbdbd', GradientType=0);
+      box-shadow: none;
+      text-shadow: 1px 1px #e7e6e6;
+      &:before {
+        background-color: #d7d7d7;
+        box-shadow: inset 1px 1px #b4b4b4, inset 0 -1px map-get($clrs, white-light);
+      }
+    }
   }
 }

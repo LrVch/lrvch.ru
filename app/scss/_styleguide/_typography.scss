@@ -31,6 +31,7 @@
 }
 
 %title-block {
+  font-family: $font-base-family;
   font-size: $font-size-big;
   line-height: $font-size-big;
   color: map-get($clrs, grey-title);

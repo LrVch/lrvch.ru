@@ -6,7 +6,7 @@
   padding-top: 20px;
   padding-bottom: 20px;
   background: linear-gradient(to bottom, map-get($clrs, white), map-get($clrs, white-lighten));
-  //filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#fbfbfb', GradientType=0);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#fbfbfb', GradientType=0);
   &__inner {
     @extend %container;
   }

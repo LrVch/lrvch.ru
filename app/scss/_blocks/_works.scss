@@ -5,24 +5,12 @@
   border-radius: 5px 5px 7px 7px;
   font-family: $font-family-bold;
   box-shadow: 0px 3px 6px -3px #d5cf95;
-  &__title {
-    margin: 0;
-    padding: 0;
-    @extend %title-block;
-    padding: 15px 0 16px 40px;
-    border: 1px solid;
-    border-top-color: map-get($clrs, dark-lighten);
-    border-bottom-color: map-get($clrs, dark-light);
-    border-left-color: map-get($clrs, dark-light);
-    border-right-color: map-get($clrs, dark-light);
-    border-radius: 5px 5px 0 0;
-    background: linear-gradient(to bottom, map-get($clrs, dark-grey), map-get($clrs, dark-dark));
-    //filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a9a7a7', endColorstr='#7b7979', GradientType=0);
-    font-family: $font-base-family;
-  }
   &__inner {
     min-height: 703px;
     padding: 40px 24px;
+    border: 1px solid #c1c1c1;
+    border-top: none;
+    border-radius: 0 0 7px 7px;
   }
   &__list {
     margin: 0;
@@ -82,7 +70,7 @@
   }
   &__desc {
     position: absolute;
-    z-index: 20;
+    z-index: 3;
     left: 50%;
     top: 50%;
     margin-top: -6px;

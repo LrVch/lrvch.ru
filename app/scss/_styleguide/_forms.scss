@@ -1,3 +1,71 @@
+// форма добавления проекта
+.form {
+  &__label {
+    position: relative;
+    display: block;
+    margin-bottom: 9px;
+    font-family: $font-base-family;
+    font-size: $font-base-size;
+    color: #727070;
+  }
+  &__input {
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 6px;
+    padding: 11px 8px;
+    border: 1px solid #d6d5d3;
+    font-family: $font-family-light;
+    font-size: $font-size-small;
+    border-radius: 4px;
+    background: linear-gradient(to bottom, #fbfcfd, #f4f3f3);
+    &:focus {
+      background: linear-gradient(to bottom, darken(#fbfcfd, 1%), darken(#f4f3f3, 3%));
+    }
+    &-file {
+      position: relative;
+      display: block;
+      box-sizing: border-box;
+      width: 100%;
+      margin-bottom: 6px;
+      padding: 11px 8px;
+      border: 1px solid #d6d5d3;
+      border-radius: 4px;
+      font-family: $font-family-light;
+      font-size: $font-size-small;
+      color: #aaa;
+      background: linear-gradient(to bottom, #fbfcfd, #f4f3f3);
+      cursor: pointer;
+      &:before {
+        position: absolute;
+        top: -1px;
+        right: -1px;
+        content: "";
+        height: 100%;
+        width: 52px;
+        border: 1px solid #d6d5d3;
+        border-radius: 0 4px 4px 0;
+        background-image: url("../img/spritesheet.png"), linear-gradient( #fcfbfa, #e9e8e8);
+        background-position: 2px -135px, center center;
+        background-repeat: no-repeat, no-repeat;
+      }
+      
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+  &__file {
+    display: none;
+  }
+  &__btn-wrapper {
+    padding-top: 5px;
+    font-size: 0;
+    text-align: center;
+  }
+}
+
+
+// окно ошибки
 .error {
   position: relative;
   display: none;
@@ -7,6 +75,7 @@
   border-radius: 4px;
   font-family: $font-family-regular;
   color: #cb6945;
+  background: #e9c8bc;
   &-bold {
     font-family: $font-family-bold;
     display: block;
@@ -22,6 +91,22 @@
     cursor: pointer;
   }
   &--visible {
+  display: block;
+  }
+}
+
+// окно успешного добавления проекта
+.success {
+  margin-bottom: 6px;
+  padding: 4px 9px;
+  border: 1px solid #49bb7b;
+  border-radius: 4px;
+  font-family: $font-family-regular;
+  color: #49bb7b;
+  background: #bde2cc;
+  &-bold {
+    font-family: $font-family-bold;
     display: block;
+    font-size: 16px;
   }
 }

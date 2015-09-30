@@ -40,7 +40,7 @@
   <!-- END header -->
 
   <!-- content -->
-  <section class="content">
+  <section class="content content--work">
     <div class="content__inner">
       <div class="row">
         <div class="left-col">
@@ -66,7 +66,7 @@
         </div>
         <div class="right-col">
           <section class="works">
-            <h2 class="works__title">Мои работы</h2>
+            <h2 class="main-title">Мои работы</h2>
             <div class="works__inner">
               <ul class="works__list">
 
@@ -135,28 +135,11 @@
         </div>
       </div>
     </div>
-
-    <!-- footer -->
-    <section class="page-footer">
-      <div class="page-footer__inner">
-        <div class="row">
-          <div class="page-footer__intro">
-            <a class="page-footer__enter" href="login.html">Вход</a>
-          </div>
-          <div class="page-footer__copy">
-            <p class="page-footer__copy-text">&copy; 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его!</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- END footer -->
-
   </section>
   <!-- END content -->
 
-
   <!-- footer -->
-  <!--<section class="page-footer">
+  <footer class="page-footer">
     <div class="page-footer__inner">
       <div class="row">
         <div class="page-footer__intro">
@@ -167,14 +150,14 @@
         </div>
       </div>
     </div>
-  </section>-->
+  </footer>
   <!-- END footer -->
 
 
 
 
   <!-- Модальное окно добавления проекта -->
-  <section class="modal">
+  <section class="modal  modal--add-visible  modal--add">
     <div class="modal__close"></div>
     <div class="error  error--visible">
       <div class="error-close"></div>
@@ -182,22 +165,33 @@
         Ошибка!
       </span>Невозможно добавить проект.
     </div>
-    <form action="#" method="post" enctype="multipart/form-data">
-      <label class="modal__label" for="project">Название проекта</label>
-      <input class="modal__input" type="text" id="project" name="project" placeholder="Введите название">
-      <label class="modal__label" for="file">Картинка проекта</label>
-      <label class="modal__input-file" for="file">Загрузите изображение</label>
-      <input class="modal__file" type="file" id="file" name="file" accept="image/*,image/jpeg,image/png">
-      <label class="modal__label" for="url">URL проекта</label>
-      <input class="modal__input" type="url" id="url" name="url" placeholder="Добавьте ссылку">
-      <label class="modal__label" for="textarea">Описание</label>
-      <textarea class="modal__input" name="textarea" id="textarea" cols="30" rows="5" placeholder="Пара слов о вашм проекте"></textarea>
-      <div class="modal__btn-wrapper">
-        <input class="modal_btn btn-2" type="submit" value="Добавить">
+    <form class="form" action="#" method="post" enctype="multipart/form-data">
+      <label class="form__label" for="project">Название проекта</label>
+      <input class="form__input" type="text" id="project" name="project" placeholder="Введите название">
+      <label class="form__label" for="file">Картинка проекта</label>
+      <label class="form__input-file" for="file">Загрузите изображение</label>
+      <input class="form__file" type="file" id="file" name="file" accept="image/*,image/jpeg,image/png">
+      <label class="form__label" for="url">URL проекта</label>
+      <input class="form__input" type="url" id="url" name="url" placeholder="Добавьте ссылку">
+      <label class="form__label" for="textarea">Описание</label>
+      <textarea class="form__input" name="textarea" id="textarea" cols="30" rows="5" placeholder="Пара слов о вашм проекте"></textarea>
+      <div class="form__btn-wrapper">
+        <input class="form__btn btn" type="submit" value="Добавить">
       </div>
     </form>
   </section>
   <!-- END Модальное окно добавления проекта -->
+  
+  <!-- Модальное окно успешного добавления -->
+  <section class="modal modal--success-visible">
+    <div class="modal__close"></div>
+    <div class="success">
+      <span class="success-bold">
+        Ура!
+      </span>Проект успешно добавлен.
+    </div>
+  </section>
+  <!-- END Модальное окно успешного добавления -->
 
   <script src="bower/jquery/jquery.js"></script>
   <script src="js/script.js"></script>

@@ -1,87 +1,47 @@
+// модальное окно
 .modal {
-  position: relative;
+  position: fixed;
+  z-index: 4;
+  top: 50%;
+  left: 50%;
+  display: none;
+  //position: relative;
   width: 363px;
-  margin: 0 auto;
-  margin-top: 100px;
+  //margin: 0 auto;
+  //margin-top: 100px;
   padding: 27px 21px;
   box-sizing: border-box;
+  border: 1px solid #ccc;
   border-radius: 6px;
   background: #f2f1f0;
-  &:before {
-    position: absolute;
-    content: "Добавление контента";
-    top: -19px;
-    left: 22px;
-    font-family: $font-family-light;
-    font-size: $font-size-small;
-    color: #f8f7f6;
-  }
   &__close {
-    position: absolute; 
+    position: absolute;
     top: 7px;
     right: 7px;
     width: 13px;
     height: 13px;
-    background: url("../img/spritesheet.png") no-repeat -49px -579px ;
+    background: url("../img/spritesheet.png") no-repeat -49px -579px;
     cursor: pointer;
   }
-  
-  &__label {
-    position: relative;
-    display: block;
-    margin-bottom: 9px;
-    font-family: $font-family-regular;
-    color: #727070;
-  }
-  &__input {
-    box-sizing: border-box;
-    width: 100%;
-    margin-bottom: 6px;
-    padding: 11px 8px;
-    border: 1px solid #d6d5d3;
-    font-family: $font-family-light;
-    font-size: $font-size-small;
-    border-radius: 4px;
-    background: linear-gradient(to bottom, #fbfcfd, #f4f3f3);
-    &-file {
-      position: relative;
-      display: block;
-      box-sizing: border-box;
-      width: 100%;
-      margin-bottom: 6px;
-      padding: 11px 8px;
-      border: 1px solid #d6d5d3;
-      border-radius: 4px;
+  &--add {
+    &:before {
+      position: absolute;
+      content: "Добавление контента";
+      top: -19px;
+      left: 22px;
       font-family: $font-family-light;
       font-size: $font-size-small;
-      color: #aaa;
-      background: linear-gradient(to bottom, #fbfcfd, #f4f3f3);
-      cursor: pointer;
-      &:before {
-        position: absolute;
-        top: -1px;
-        right: -1px;
-        content: "";
-        height: 100%;
-        width: 52px;
-        border: 1px solid #d6d5d3;
-        border-radius: 0 4px 4px 0;
-        background-image: url("../img/spritesheet.png"), linear-gradient( #fcfbfa, #e9e8e8);
-        background-position: 2px -135px, center center;
-        background-repeat: no-repeat, no-repeat;
-      }
-      
-    }
-    &:focus {
-      outline: none;
+      color: #f8f7f6;
     }
   }
-  &__file {
-    display: none;
+  &--success-visible {
+    display: block;
+    margin-left: -182px;
+    margin-top: -70px;
   }
-  &__btn-wrapper {
-    padding-top: 5px;
-    font-size: 0;
-    text-align: center;
+  &--add-visible {
+    display: block;
+    margin-left: -182px;
+    margin-top: -240px;
   }
 }

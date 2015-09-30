@@ -1,0 +1,8 @@
+.inner {
+  border: 1px solid #c1c1c1;
+  border-top: none;
+  border-radius: 0 0 7px 7px;
+  color: map-get($clrs, gray-menu);
+  background: map-get($clrs, grey-work-bg);
+  font-family: $font-family-bold;
+}

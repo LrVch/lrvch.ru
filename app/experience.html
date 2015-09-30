@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="ru-RU">
 
 <head>
   <meta charset="utf-8">
@@ -58,8 +58,8 @@
             <ul class="contacts__list">
               <li class="contacts__list-item  contacts__list-item--head">Контакты</li>
               <li class="contacts__list-item contacts__list-item--mail"><a class="contacts__list-link" href="mailto:caden45@mail.ru"><span class="contacts__list-item-img contacts__list-item-img--mail">caden45@mail.ru</span></a></li>
-              <li class="contacts__list-item"><span class="contacts__list-item-img contacts__list-item-img--phone">+79136201199</span></li>
-              <li class="contacts__list-item"><span class="contacts__list-item-img contacts__list-item-img--nik">caden43</span></li>
+              <li class="contacts__list-item"><a class="contacts__list-link" href="tel:+79136201199"><span class="contacts__list-item-img contacts__list-item-img--phone">+79136201199</span></a></li>
+              <li class="contacts__list-item"><a class="contacts__list-link" href="skype:caden43?call"><span class="contacts__list-item-img contacts__list-item-img--nik">caden43</span></a></li>
             </ul>
             <!-- END bottom menu-->
           </aside>
@@ -83,7 +83,7 @@
 
                 <li class="works__list-item">
                   <div class="works__img-wrapper">
-                   <div class="works__anim-top"></div>
+                    <div class="works__anim-top"></div>
                     <div class="works__anim-bottom"></div>
                     <a href="#" class="works__desc">Подробнее</a>
                     <img src="img/foto-2.jpg" alt="work-2" class="works__img">
@@ -94,7 +94,7 @@
 
                 <li class="works__list-item">
                   <div class="works__img-wrapper">
-                   <div class="works__anim-top"></div>
+                    <div class="works__anim-top"></div>
                     <div class="works__anim-bottom"></div>
                     <a href="#" class="works__desc">Подробнее</a>
                     <img src="img/foto-3.jpg" alt="work-3" class="works__img">
@@ -105,7 +105,7 @@
 
                 <li class="works__list-item">
                   <div class="works__img-wrapper">
-                   <div class="works__anim-top"></div>
+                    <div class="works__anim-top"></div>
                     <div class="works__anim-bottom"></div>
                     <a href="#" class="works__desc">Подробнее</a>
                     <img src="img/foto-4.jpg" alt="work-4" class="works__img">
@@ -116,7 +116,7 @@
 
                 <li class="works__list-item">
                   <div class="works__img-wrapper">
-                   <div class="works__anim-top"></div>
+                    <div class="works__anim-top"></div>
                     <div class="works__anim-bottom"></div>
                     <a href="#" class="works__desc">Подробнее</a>
                     <img src="img/foto-5.jpg" alt="" class="works__img">
@@ -124,9 +124,9 @@
                   <h2 class="works__item-title">yasnow.biz</h2>
                   <p class="works__item-text">Landing page по продажи франшизы снежного бизнеса.</p>
                 </li>
-                
+
                 <li class="works__list-item works__list-item--last">
-                <a href="" class="works__link">Добавить проект</a>
+                  <a href="" class="works__link">Добавить проект</a>
                 </li>
 
               </ul>
@@ -153,9 +153,9 @@
 
   </section>
   <!-- END content -->
-  
-  
-   <!-- footer -->
+
+
+  <!-- footer -->
   <!--<section class="page-footer">
     <div class="page-footer__inner">
       <div class="row">
@@ -169,6 +169,34 @@
     </div>
   </section>-->
   <!-- END footer -->
+
+
+
+
+  <!-- Модальное окно добавления проекта -->
+  <section class="modal">
+   <div class="modal__close"></div>
+    <div class="modal__error">
+     <div class="modal__error-close"></div>
+      <span class="modal__error-bold">
+        Ошибка!
+      </span>
+      Невозможно добавить проект.
+    </div>
+    <form action="#" method="post" enctype="multipart/form-data">
+      <label class="modal__label"  for="project">Название проекта</label>
+      <input class="modal__input" type="text" id="project" name="project" placeholder="Введите название">
+      <label class="modal__label" for="file">Картинка проекта</label>
+      <label class="modal__input-file" for="file">Загрузите изображение</label>
+      <input class="modal__file" type="file" id="file" name="file" accept="image/*,image/jpeg,image/png">
+      <label class="modal__label" for="url">URL проекта</label>
+      <input  class="modal__input" type="url" id="url" name="url" placeholder="Добавьте ссылку">
+      <label class="modal__label" for="textarea">Описание</label>
+      <textarea class="modal__input" name="textarea" id="textarea" cols="30" rows="5" placeholder="Пара слов о вашм проекте"></textarea>
+      <input class="modal_btn btn" type="submit" value="Добавить">
+    </form>
+  </section>
+  <!-- END Модальное окно добавления проекта -->
 
   <script src="bower/jquery/jquery.js"></script>
   <script src="js/script.js"></script>

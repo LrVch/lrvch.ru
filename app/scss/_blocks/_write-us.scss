@@ -1,13 +1,15 @@
 .write-us {
-  margin-bottom: 35px;
+  margin-bottom: 331px;
   &__inner {
     min-height: 754px;
     padding-top: 30px;
-    font-size: 0;
   }
   &__form {
     width: 406px;
     margin: 0 auto;
+  }
+  &__input-outer {
+    font-size: 0;
   }
   &__input {
     display: inline-block;
@@ -25,6 +27,7 @@
   }
   &__captcha-outer {
     margin-bottom: 24px;
+    font-size: 0;
   }
   &__captcha {
     display: inline-block;
@@ -34,12 +37,13 @@
     margin-bottom: 6px;
     &:first-child {
       margin-left: 0;
-    } 
+    }
   }
   &__captcha-wrapper {
     height: 75px;
     border: 1px solid #cccccc;
     border-radius: 5px;
+    overflow: hidden;
     img {
       width: 100%;
       height: 100%;
@@ -48,15 +52,18 @@
   &__code {
     padding: 6px 8px;
   }
-  &__btns-wrapper {
+  &__btns-outer {
+    font-size: 0;
+  }
+  &__btns {
     display: inline-block;
-    vertical-align: middle;
+    vertical-align: top;
     width: 192px;
     margin-left: 19px;
     margin-bottom: 6px;
     text-align: center;
     &:first-child {
       margin-left: 0;
-    } 
+    }
   }
 }

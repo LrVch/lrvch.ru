@@ -40,7 +40,7 @@
   <!-- END header -->
 
   <!-- content -->
-  <section class="content content--work">
+  <section class="content">
     <div class="content__inner">
       <div class="row">
         <div class="left-col">
@@ -69,13 +69,15 @@
             <h2 class="main-title main-title--regular">У вас интересный проект? Напишите мне</h2>
             <div class="inner  write-us__inner">
               <form action="#" method="post" class="form write-us__form">
-                <div class="write-us__input">
-                  <label for="name" class="form__label">Имя</label>
-                  <input type="text" class="form__input" name="name" id="name" placeholder="Как к Вам обращаться">
-                </div>
-                <div class="write-us__input">
-                  <label for="email" class="form__label">Email</label>
-                  <input type="email" class="form__input" name="email" id="email" placeholder="Куда мне писать">
+                <div class="write-us__input-outer">
+                  <div class="write-us__input">
+                    <label for="name" class="form__label">Имя</label>
+                    <input type="text" class="form__input" name="name" id="name" placeholder="Как к Вам обращаться">
+                  </div>
+                  <div class="write-us__input">
+                    <label for="email" class="form__label">Email</label>
+                    <input type="email" class="form__input" name="email" id="email" placeholder="Куда мне писать">
+                  </div>
                 </div>
                 <label for="textarea" class="form__label">Сообщение</label>
                 <textarea class="form__input write-us__textarea" name="textarea" id="textarea" placeholder="Кратко в чем суть"></textarea>
@@ -90,11 +92,11 @@
                     <input type="text" class="form__input  write-us__code" name="code" id="code" placeholder="Введите код">
                   </div>
                 </div>
-                <div class="write-us__btns">
-                  <div class="write-us__btns-wrapper">
+                <div class="write-us__btns-outer">
+                  <div class="write-us__btns">
                     <input class="write__btn btn-2" type="submit" value="Отправить">
                   </div>
-                  <div class="write-us__btns-wrapper">
+                  <div class="write-us__btns">
                     <input class="write__btn btn" type="submit" value="Очистить">
                   </div>
                 </div>

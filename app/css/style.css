@@ -1192,14 +1192,15 @@ body {
     margin-top: -240px; }
 
 .write-us {
-  margin-bottom: 35px; }
+  margin-bottom: 331px; }
   .write-us__inner {
     min-height: 754px;
-    padding-top: 30px;
-    font-size: 0; }
+    padding-top: 30px; }
   .write-us__form {
     width: 406px;
     margin: 0 auto; }
+  .write-us__input-outer {
+    font-size: 0; }
   .write-us__input {
     display: inline-block;
     vertical-align: top;
@@ -1212,7 +1213,8 @@ body {
     height: 183px;
     margin-bottom: 12px; }
   .write-us__captcha-outer {
-    margin-bottom: 24px; }
+    margin-bottom: 24px;
+    font-size: 0; }
   .write-us__captcha {
     display: inline-block;
     vertical-align: middle;
@@ -1224,18 +1226,21 @@ body {
   .write-us__captcha-wrapper {
     height: 75px;
     border: 1px solid #cccccc;
-    border-radius: 5px; }
+    border-radius: 5px;
+    overflow: hidden; }
     .write-us__captcha-wrapper img {
       width: 100%;
       height: 100%; }
   .write-us__code {
     padding: 6px 8px; }
-  .write-us__btns-wrapper {
+  .write-us__btns-outer {
+    font-size: 0; }
+  .write-us__btns {
     display: inline-block;
-    vertical-align: middle;
+    vertical-align: top;
     width: 192px;
     margin-left: 19px;
     margin-bottom: 6px;
     text-align: center; }
-    .write-us__btns-wrapper:first-child {
+    .write-us__btns:first-child {
       margin-left: 0; }

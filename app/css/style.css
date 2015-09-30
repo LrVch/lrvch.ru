@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Set default font family to sans-serif.
@@ -364,10 +365,10 @@ button:focus,
 a:focus {
   outline: 0; }
 
-.btn {
+.btn, .btn-2 {
   text-decoration: none; }
 
-.btn {
+.btn, .btn-2 {
   background: transparent;
   border: 0;
   padding: 0;
@@ -420,8 +421,79 @@ a:focus {
   line-height: 24px;
   color: #eeedec; }
 
-.btn:hover {
-  color: #fff; }
+.btn {
+  display: inline-block;
+  vertical-align: top;
+  width: 121px;
+  margin: 0 auto;
+  padding: 9px 0;
+  border: 1px solid #d2d2d2;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #727070;
+  background: linear-gradient(to bottom, #f9fafa, #e5e3e2);
+  text-shadow: 1px 1px #fafafa; }
+  .btn:hover {
+    box-shadow: inset 0 3px 2px #e7e6e6;
+    background: linear-gradient(to bottom, #e3e2e2, #bebdbd); }
+  .btn:active {
+    border-color: #636363;
+    border-top-color: #9c9c9c;
+    color: #eeedec;
+    text-shadow: 1px 1px #686767;
+    background: linear-gradient(to bottom, #a8a7a7, #7c7979);
+    box-shadow: inset 0 1px 0 #c3c2c2; }
+
+.btn-2 {
+  display: inline-block;
+  vertical-align: top;
+  width: 121px;
+  margin: 0 auto;
+  padding: 9px 0;
+  border: 1px solid #64a083;
+  border-top-color: #95dabc;
+  border-radius: 5px;
+  font-size: 14px;
+  text-align: center;
+  color: #467366;
+  background: linear-gradient(to bottom, #a5e7cb, #74b797);
+  text-shadow: 1px 1px #e0f1e9;
+  box-shadow: inset 0 1px 0 #c0efdb; }
+  .btn-2:hover {
+    border-color: #5e987f;
+    border-top-color: #88d1b3;
+    color: #467366;
+    text-shadow: 1px 1px #dcece6;
+    box-shadow: inset 0 1px #b2e6d1;
+    background: linear-gradient(to bottom, #90dabc, #669f87); }
+  .btn-2:active {
+    text-shadow: 1px 1px #686767;
+    background: linear-gradient(to bottom, #a8a7a7, #7c7979);
+    box-shadow: inset 0 1px 0 #c3c2c2; }
+
+.error {
+  position: relative;
+  display: none;
+  margin-bottom: 6px;
+  padding: 4px 9px;
+  border: 1px solid #cb6945;
+  border-radius: 4px;
+  font-family: "open_sansregular", Arial, Helvetica, Garuda, sans-serif;
+  color: #cb6945; }
+  .error-bold {
+    font-family: "open_sansbold", Arial, Helvetica, Garuda, sans-serif;
+    display: block;
+    font-size: 16px; }
+  .error-close {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    width: 10px;
+    height: 10px;
+    background: url("../img/spritesheet.png") no-repeat -53px -535px;
+    cursor: pointer; }
+  .error--visible {
+    display: block; }
 
 .browsehappy {
   margin: 0;
@@ -442,6 +514,7 @@ body {
   -moz-osx-font-smoothing: grayscale; }
 
 body {
+  position: relative;
   background: url("../img/bg-main.jpg") no-repeat center top;
   background-size: cover; }
 
@@ -503,14 +576,14 @@ body {
     font-size: 0; }
     .page-header__list-item {
       display: inline-block;
-      margin-right: 15px;
+      margin-left: 15px;
       margin-top: 16px;
       vertical-align: top;
       list-style-type: none;
       font-size: 14px;
       text-indent: -10000px; }
-      .page-header__list-item:last-child {
-        margin-right: 0; }
+      .page-header__list-item:first-child {
+        margin-left: 0; }
     .page-header__list-link {
       display: block;
       width: 38px;
@@ -636,7 +709,6 @@ body {
   box-shadow: 0px 3px 5px -1px #d5cf95; }
   .contacts__list-item {
     position: relative;
-    padding: 7px 0 8px 97px;
     list-style-type: none;
     text-align: left;
     color: #727070;
@@ -772,14 +844,13 @@ body {
     margin: 0;
     padding: 0;
     padding-top: 3px;
-    padding-left: 13px;
     font-size: 0; }
   .main-info__skills-item {
     position: relative;
     z-index: 1;
     display: inline-block;
     vertical-align: top;
-    margin-right: 13px;
+    margin-left: 13px;
     margin-bottom: 10px;
     padding: 2px 7px 2px 8px;
     border: 1px solid #d5d5d5;
@@ -1009,3 +1080,79 @@ body {
       .works__link:hover:before {
         background-color: #d7d7d7;
         box-shadow: inset 1px 1px #b4b4b4, inset 0 -1px #fbfbfb; }
+
+.modal {
+  position: relative;
+  width: 363px;
+  margin: 0 auto;
+  margin-top: 100px;
+  padding: 27px 21px;
+  box-sizing: border-box;
+  border-radius: 6px;
+  background: #f2f1f0; }
+  .modal:before {
+    position: absolute;
+    content: "Добавление контента";
+    top: -19px;
+    left: 22px;
+    font-family: "open_sanslight", Arial, Helvetica, Garuda, sans-serif;
+    font-size: 12px;
+    color: #f8f7f6; }
+  .modal__close {
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    width: 13px;
+    height: 13px;
+    background: url("../img/spritesheet.png") no-repeat -49px -579px;
+    cursor: pointer; }
+  .modal__label {
+    position: relative;
+    display: block;
+    margin-bottom: 9px;
+    font-family: "open_sansregular", Arial, Helvetica, Garuda, sans-serif;
+    color: #727070; }
+  .modal__input {
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 6px;
+    padding: 11px 8px;
+    border: 1px solid #d6d5d3;
+    font-family: "open_sanslight", Arial, Helvetica, Garuda, sans-serif;
+    font-size: 12px;
+    border-radius: 4px;
+    background: linear-gradient(to bottom, #fbfcfd, #f4f3f3); }
+    .modal__input-file {
+      position: relative;
+      display: block;
+      box-sizing: border-box;
+      width: 100%;
+      margin-bottom: 6px;
+      padding: 11px 8px;
+      border: 1px solid #d6d5d3;
+      border-radius: 4px;
+      font-family: "open_sanslight", Arial, Helvetica, Garuda, sans-serif;
+      font-size: 12px;
+      color: #aaa;
+      background: linear-gradient(to bottom, #fbfcfd, #f4f3f3);
+      cursor: pointer; }
+      .modal__input-file:before {
+        position: absolute;
+        top: -1px;
+        right: -1px;
+        content: "";
+        height: 100%;
+        width: 52px;
+        border: 1px solid #d6d5d3;
+        border-radius: 0 4px 4px 0;
+        background-image: url("../img/spritesheet.png"), linear-gradient(#fcfbfa, #e9e8e8);
+        background-position: 2px -135px, center center;
+        background-repeat: no-repeat, no-repeat; }
+    .modal__input:focus {
+      outline: none; }
+  .modal__file {
+    display: none; }
+  .modal__btn-wrapper {
+    padding-top: 5px;
+    font-size: 0;
+    text-align: center; }

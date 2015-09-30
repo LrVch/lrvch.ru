@@ -175,25 +175,26 @@
 
   <!-- Модальное окно добавления проекта -->
   <section class="modal">
-   <div class="modal__close"></div>
-    <div class="modal__error">
-     <div class="modal__error-close"></div>
-      <span class="modal__error-bold">
+    <div class="modal__close"></div>
+    <div class="error  error--visible">
+      <div class="error-close"></div>
+      <span class="error-bold">
         Ошибка!
-      </span>
-      Невозможно добавить проект.
+      </span>Невозможно добавить проект.
     </div>
     <form action="#" method="post" enctype="multipart/form-data">
-      <label class="modal__label"  for="project">Название проекта</label>
+      <label class="modal__label" for="project">Название проекта</label>
       <input class="modal__input" type="text" id="project" name="project" placeholder="Введите название">
       <label class="modal__label" for="file">Картинка проекта</label>
       <label class="modal__input-file" for="file">Загрузите изображение</label>
       <input class="modal__file" type="file" id="file" name="file" accept="image/*,image/jpeg,image/png">
       <label class="modal__label" for="url">URL проекта</label>
-      <input  class="modal__input" type="url" id="url" name="url" placeholder="Добавьте ссылку">
+      <input class="modal__input" type="url" id="url" name="url" placeholder="Добавьте ссылку">
       <label class="modal__label" for="textarea">Описание</label>
       <textarea class="modal__input" name="textarea" id="textarea" cols="30" rows="5" placeholder="Пара слов о вашм проекте"></textarea>
-      <input class="modal_btn btn" type="submit" value="Добавить">
+      <div class="modal__btn-wrapper">
+        <input class="modal_btn btn-2" type="submit" value="Добавить">
+      </div>
     </form>
   </section>
   <!-- END Модальное окно добавления проекта -->

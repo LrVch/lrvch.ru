@@ -1,14 +1,27 @@
-%resetFieldset {
-    border: 0;
-    padding: 0;
-    margin: 0;
-}
-
-%formGroup {
-    @extend %resetFieldset;
-    font-size: 0;
-}
-
-%textField {
-    
+.error {
+  position: relative;
+  display: none;
+  margin-bottom: 6px;
+  padding: 4px 9px;
+  border: 1px solid #cb6945;
+  border-radius: 4px;
+  font-family: $font-family-regular;
+  color: #cb6945;
+  &-bold {
+    font-family: $font-family-bold;
+    display: block;
+    font-size: 16px;
+  }
+  &-close {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    width: 10px;
+    height: 10px;
+    background: url("../img/spritesheet.png") no-repeat -53px -535px;
+    cursor: pointer;
+  }
+  &--visible {
+    display: block;
+  }
 }

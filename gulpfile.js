@@ -7,7 +7,7 @@ var gulp = require("gulp"),
   autoprefixer = require('gulp-autoprefixer'),
   uncss = require('gulp-uncss');
 
-
+// sass
 gulp.task("sass", function () {
   return gulp.src("app/scss/style.scss")
     .pipe(sass())
@@ -16,30 +16,35 @@ gulp.task("sass", function () {
     .pipe(notify("Done!"));
 });
 
-
+// minify
 gulp.task('minifyCSS', function () {
   return gulp.src('app/css/style.css')
-    .pipe(autoprefixer({
-      browsers: ['last 2 versions', "ie 8"],
-      cascade: false
-    }))
     .pipe(minifyCss())
-    .pipe(rename("style.mim.css"))
+    .pipe(rename("style.min.css"))
     .pipe(gulp.dest('app/css'))
-    //.pipe(notify("min!"));
 });
 
-// неработает пока
+// autoprefixer
+gulp.task('autoprefixer', function () {
+  return gulp.src('app/css/style.css')
+    .pipe(autoprefixer({
+      browsers: ['last 6 versions', "ie 8"],
+      cascade: false
+    }))
+    .pipe(gulp.dest('app/css/'));
+});
+
+// uncss неработает пока
 gulp.task('uncss', function () {
   return gulp.src('app/css/style.min.css')
     .pipe(uncss({
-      html: ['app/*.html']
+      html: ['app/**/*.html']
     }))
     .pipe(gulp.dest('app/css/style.min.css'));
 });
 
-
-gulp.task("server", ["sass", "minifyCSS"], function () {
+// browsersync
+gulp.task("server", ["sass", "autoprefixer"], function () {
 
   browserSync({
     port: 9000,
@@ -49,8 +54,8 @@ gulp.task("server", ["sass", "minifyCSS"], function () {
   });
 
   gulp.watch("app/scss/**/*.scss", ["sass"]);
-  gulp.watch("app/css/**/*.css", ["minifyCSS"]).on("change", browserSync.reload);
-  gulp.watch("app/css/**/*.min.css").on("change", browserSync.reload);
+  gulp.watch("app/css/**/*.css", ["autoprefixer"]).on("change", browserSync.reload);
+  //gulp.watch("app/css/**/*.min.css").on("change", browserSync.reload);
   gulp.watch("app/*.html").on("change", browserSync.reload);
   gulp.watch("app/js/**/*.js").on("change", browserSync.reload);
 

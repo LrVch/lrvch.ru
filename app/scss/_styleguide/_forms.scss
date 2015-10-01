@@ -18,8 +18,13 @@
     font-size: $font-size-small;
     border-radius: 4px;
     background: linear-gradient(to bottom, #fbfcfd, #f4f3f3);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fbfcfd', endColorstr='#f4f3f3', GradientType=0);
+    &--textarea {
+      resize: none;
+    }
     &:focus {
       background: linear-gradient(to bottom, darken(#fbfcfd, 1%), darken(#f4f3f3, 3%));
+      filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f2f3f4', endColorstr='#e6e6e6', GradientType=0);
     }
     &-file {
       position: relative;
@@ -34,6 +39,7 @@
       font-size: $font-size-small;
       color: #aaa;
       background: linear-gradient(to bottom, #fbfcfd, #f4f3f3);
+      filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fbfcfd', endColorstr='#f4f3f3', GradientType=0);
       cursor: pointer;
       &:before {
         position: absolute;
@@ -55,7 +61,10 @@
     }
   }
   &__file {
-    display: none;
+    //display: none;
+    position: absolute;
+    top: 0;
+    left: -9999px;
   }
   &__btn-wrapper {
     padding-top: 5px;

@@ -495,6 +495,38 @@ a:focus {
   font-size: 14px;
   color: #727070; }
 
+.form__checkbox-label {
+  position: relative;
+  font-family: "open_sanssemibold", Arial, Helvetica, Garuda, sans-serif;
+  font-size: 14px;
+  line-height: 15px;
+  color: #727070; }
+
+.form__checkbox:enabled,
+.form__checkbox:disabled {
+  display: none; }
+
+.form__checkbox:enabled + .form__control-indicator,
+.form__checkbox:disabled + .form__control-indicator {
+  display: inline-block;
+  vertical-align: top;
+  width: 15px;
+  height: 14px;
+  margin-right: 9px;
+  border-top: 1px solid #d1d0d0;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #e5e4e3;
+  border-radius: 5px;
+  background: -webkit-linear-gradient(top, #ffffff, #f4f2f2);
+  background: linear-gradient(to bottom, #ffffff, #f4f2f2); }
+
+.form__checkbox:checked + .form__control-indicator {
+  background-image: url("../img/spritesheet.png"), -webkit-linear-gradient(top, #ffffff, #f4f2f2);
+  background-image: url("../img/spritesheet.png"), linear-gradient(to bottom, #ffffff, #f4f2f2);
+  background-repeat: no-repeat;
+  background-position: -50px -105px, 100% 100%; }
+
 .form__input {
   box-sizing: border-box;
   width: 100%;
@@ -890,7 +922,7 @@ body {
         height: 36px;
         background-image: url("../img/spritesheet.png");
         background-repeat: no-repeat;
-        background-position: -12px -41px; }
+        background-position: 0px -60px; }
       .contacts__list-item-img:after {
         position: absolute;
         content: "";
@@ -996,11 +1028,11 @@ body {
       content: '';
       position: absolute;
       z-index: 2;
-      top: -4px;
+      top: -3px;
       left: -9px;
       width: 10px;
       height: 20px;
-      background: url("../img/spritesheet.png") no-repeat -8px -2px; }
+      background: url("../img/spritesheet.png") no-repeat -10px 2px; }
 
 .experience {
   margin-bottom: 35px;
@@ -1226,6 +1258,18 @@ body {
     font-family: "open_sanslight", Arial, Helvetica, Garuda, sans-serif;
     font-size: 12px;
     color: #f8f7f6; }
+  .modal--login:before {
+    position: absolute;
+    content: "Авторизируйтесь";
+    top: -19px;
+    left: 22px;
+    font-family: "open_sanslight", Arial, Helvetica, Garuda, sans-serif;
+    font-size: 12px;
+    color: #727070; }
+  .modal--success-visible {
+    display: block;
+    margin-left: -182px;
+    margin-top: -70px; }
   .modal--add-visible {
     display: block;
     margin-left: -182px;
@@ -1284,3 +1328,43 @@ body {
     text-align: center; }
     .write-us__btns:first-child {
       margin-left: 0; }
+
+.login {
+  display: block;
+  position: relative;
+  width: 330px;
+  margin-left: -165px;
+  margin-top: 270px;
+  margin-bottom: 200px;
+  padding: 39px 36px;
+  box-shadow: 0 4px 7px -3px #b1b1b1; }
+  .login__input {
+    margin-bottom: 24px;
+    padding: 11px 8px;
+    padding-left: 71px;
+    background-image: url("../img/spritesheet.png"), url("../img/spritesheet.png"), -webkit-linear-gradient(top, #fbfcfd, #f4f3f3);
+    background-image: url("../img/spritesheet.png"), url("../img/spritesheet.png"), linear-gradient(to bottom, #fbfcfd, #f4f3f3);
+    background-repeat: no-repeat; }
+    .login__input--email {
+      background-position: 44px -19px, 1px -685px, 100%, 100%; }
+      .login__input--email:focus {
+        background-image: url("../img/spritesheet.png"), url("../img/spritesheet.png"), -webkit-linear-gradient(top, #f8f9fb, #edebeb);
+        background-image: url("../img/spritesheet.png"), url("../img/spritesheet.png"), linear-gradient(to bottom, #f8f9fb, #edebeb);
+        background-repeat: no-repeat;
+        background-position: 44px -19px, 1px -685px, 100%, 100%; }
+    .login__input--password {
+      margin-bottom: 17px;
+      background-position: 44px -19px, 2px -474px, 100% 100%; }
+      .login__input--password:focus {
+        background-image: url("../img/spritesheet.png"), url("../img/spritesheet.png"), -webkit-linear-gradient(top, #f8f9fb, #edebeb);
+        background-image: url("../img/spritesheet.png"), url("../img/spritesheet.png"), linear-gradient(to bottom, #f8f9fb, #edebeb);
+        background-repeat: no-repeat;
+        background-position: 44px -19px, 2px -474px, 100% 100%; }
+  .login__label {
+    display: block;
+    margin-bottom: 24px; }
+  .login__btn-wrapper {
+    font-size: 0;
+    text-align: center; }
+  .login__btn {
+    width: 148px; }

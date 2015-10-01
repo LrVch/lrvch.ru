@@ -34,11 +34,23 @@
       color: #f8f7f6;
     }
   }
-  //&--success-visible {
-  //  display: block;
-  //  margin-left: -182px;
-  //  margin-top: -70px;
-  //}
+  &--login {
+    &:before {
+      position: absolute;
+      content: "Авторизируйтесь";
+      top: -19px;
+      left: 22px;
+      font-family: $font-family-light;
+      font-size: $font-size-small;
+      color: #727070;
+    }
+  }
+  
+  &--success-visible {
+    display: block;
+    margin-left: -182px;
+    margin-top: -70px;
+  }
   &--add-visible {
     display: block;
     margin-left: -182px;

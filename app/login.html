@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="ru-RU">
 
 <head>
   <meta charset="utf-8">
@@ -8,48 +8,52 @@
   <meta name="description" content="">
   <meta name="keywords" content="">
   <meta name="author" content="">
-  <link rel="stylesheet" href="css/style.mim.css">
+  <link rel="stylesheet" href="css/style.css">
   <title>LrVch</title>
-  <script src="bower/modernizr/src/Modernizr.js"></script>
+  <link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16">
+  <script src="bower/modernizr/modernizr.js"></script>
 </head>
 
 <body>
-  <!--[if lt IE 8]>
-  <p class="browsehappy">Ваш браузер <strong>устарел</strong>. Пожалуйста <a href="http://browserhappy.com/">обновие</a> его</p>
+  <!--[if lt IE 9]>
+  <p class="browsehappy">Ваш браузер <strong>устарел</strong>. Пожалуйста <a href="http://browserhappy.com/" target="_blank">обновие</a> его</p>
   <![endif]-->
-  <!-- header -->
-  <header class="page-header">
-    <div class="page-header__inner">
-      <div class="page-header__logo">
-        <img class="page-header__logo-img" src="img/icon-logo.png" alt="loftschool">
-      </div>
-      <div class="page-header__social">
-        <ul class="page-header__list">
-          <li class="page-header__list-item"><a href="https://www.facebook.com/roman.lonskij" class="page-header__list-link page-header__list-link--fb" target="_blank" title="facebook">facebook</a></li>
-          <li class="page-header__list-item"><a href="https://vk.com/id158847119" class="page-header__list-link page-header__list-link--vk" target="_blank" title="vk">vk</a></li>
-          <li class="page-header__list-item"><a href="https://twitter.com/?lang=ru" class="page-header__list-link page-header__list-link--tw" target="_blank" title="twitter">twitter</a></li>
-          <li class="page-header__list-item"><a href="https://github.com/LrVch" class="page-header__list-link page-header__list-link--gh" target="_blank" title="github">github</a></li>
-        </ul>
-      </div>
-    </div>
-  </header>
-  <!-- END header -->
 
-  <!-- content -->
-  <section class="content">
-    <div class="content__inner">
-      <div class="row">
-        <aside class="menu col s-4">
-
-        </aside>
-        <section class="about col s-8">
-          ds
-        </section>
-
+  <!-- модальное окно входа-->
+  <section class="modal modal--login login">
+    <form action="#" method="post">
+      <input type="email" class="form__input login__input login__input--email" name="email" placeholder="Введите Email">
+      <input type="password" class="form__input login__input login__input--password" name="password" placeholder="Введите пароль">
+      
+      <label class="form__checkbox-label login__label">
+      <input type="checkbox" class="form__checkbox" checked >
+      <span class="form__control-indicator"></span>
+      Запомнить меня?
+      </label>
+      
+      <div class="login__btn-wrapper">
+        <input class="login__btn btn-2" type="submit" value="Войти">
       </div>
-    </div>
+    </form>
   </section>
-  <!-- END content -->
+  <!-- END модальное окно входа-->
+
+
+  <!-- footer -->
+  <footer class="page-footer">
+    <div class="page-footer__inner">
+      <div class="row">
+        <div class="page-footer__intro">
+          <a class="page-footer__enter" href="login.html">Вход</a>
+        </div>
+        <div class="page-footer__copy">
+          <p class="page-footer__copy-text">&copy; 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его!</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- END footer -->
+
 
 
   <script src="bower/jquery/jquery.js"></script>

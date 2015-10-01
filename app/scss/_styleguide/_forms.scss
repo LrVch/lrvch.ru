@@ -8,6 +8,40 @@
     font-size: $font-base-size;
     color: #727070;
   }
+  &__checkbox-label {
+    position: relative;
+    font-family: $font-base-family;
+    font-size: $font-base-size;
+    line-height: 15px;
+    color: #727070;
+  }
+  &__checkbox { 
+    &:enabled,
+    &:disabled {
+      display: none;
+    }
+    &:enabled + .form__control-indicator,
+    &:disabled + .form__control-indicator {
+      display: inline-block;
+      vertical-align: top;
+      width: 15px;
+      height: 14px;
+      margin-right: 9px;
+      border-top: 1px solid #d1d0d0;
+      border-left: 1px solid #ccc;
+      border-right: 1px solid #ccc;
+      border-bottom: 1px solid #e5e4e3;
+      border-radius: 5px;
+      background: linear-gradient(to bottom, #ffffff, #f4f2f2);
+    }
+    &:checked + .form__control-indicator {
+      background-image: url("../img/spritesheet.png"), linear-gradient(to bottom, #ffffff, #f4f2f2);
+      background-repeat: no-repeat;
+      background-position:  -50px -105px, 100% 100%;
+    }
+    
+    
+  }
   &__input {
     box-sizing: border-box;
     width: 100%;

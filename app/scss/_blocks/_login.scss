@@ -1,0 +1,45 @@
+.login {
+  display: block;
+  position: relative;
+  width: 330px;
+  margin-left: -165px;
+  margin-top: 270px;
+  margin-bottom: 200px;
+  padding: 39px 36px;
+  box-shadow: 0 4px 7px -3px #b1b1b1;
+  &__input {
+    margin-bottom: 24px;
+    padding: 11px 8px;
+    padding-left: 71px;
+    background-image: url("../img/spritesheet.png"), url("../img/spritesheet.png"), linear-gradient(to bottom, #fbfcfd, #f4f3f3);
+    background-repeat: no-repeat;
+    &--email {
+      background-position: 44px -19px, 1px -685px, 100%, 100%;
+      &:focus {
+        background-image: url("../img/spritesheet.png"), url("../img/spritesheet.png"), linear-gradient(to bottom, darken(#fbfcfd, 1%), darken(#f4f3f3, 3%));
+        background-repeat: no-repeat;
+        background-position: 44px -19px, 1px -685px, 100%, 100%;
+      }
+    }
+    &--password {
+      margin-bottom: 17px;
+      background-position: 44px -19px, 2px -474px, 100% 100%;
+      &:focus {
+        background-image: url("../img/spritesheet.png"), url("../img/spritesheet.png"), linear-gradient(to bottom, darken(#fbfcfd, 1%), darken(#f4f3f3, 3%));
+        background-repeat: no-repeat;
+        background-position: 44px -19px, 2px -474px, 100% 100%;
+      }
+    }
+  }
+  &__label {
+    display: block;
+    margin-bottom: 24px;
+  }
+  &__btn-wrapper {
+    font-size: 0;
+    text-align: center;
+  }
+  &__btn {
+    width: 148px;
+  }
+}

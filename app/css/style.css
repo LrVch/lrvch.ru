@@ -552,13 +552,16 @@ a:focus {
     width: 100%;
     margin-bottom: 6px;
     padding: 11px 8px;
+    padding-right: 60px;
     border: 1px solid #d6d5d3;
     border-radius: 4px;
     font-family: "open_sanslight", Arial, Helvetica, Garuda, sans-serif;
     font-size: 12px;
     color: #aaa;
+    text-overflow: ellipsis;
     background: -webkit-linear-gradient(top, #fbfcfd, #f4f3f3);
     background: linear-gradient(to bottom, #fbfcfd, #f4f3f3);
+    overflow: hidden;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fbfcfd', endColorstr='#f4f3f3', GradientType=0);
     cursor: pointer; }
     .form__input-file:before {
@@ -1230,10 +1233,6 @@ body {
         box-shadow: inset 1px 1px #b4b4b4, inset 0 -1px #fbfbfb; }
 
 .modal {
-  position: fixed;
-  z-index: 4;
-  top: 50%;
-  left: 50%;
   display: none;
   width: 363px;
   padding: 27px 21px;
@@ -1265,12 +1264,6 @@ body {
     font-family: "open_sanslight", Arial, Helvetica, Garuda, sans-serif;
     font-size: 12px;
     color: #727070; }
-  .modal--success-visible {
-    margin-left: -182px;
-    margin-top: -70px; }
-  .modal--add-visible {
-    margin-left: -182px;
-    margin-top: -240px; }
 
 .write-us {
   margin-bottom: 331px; }
@@ -1327,10 +1320,10 @@ body {
       margin-left: 0; }
 
 .login {
-  display: block;
   position: relative;
+  display: block;
   width: 330px;
-  margin-left: -165px;
+  margin: 0 auto;
   margin-top: 270px;
   margin-bottom: 200px;
   padding: 39px 36px;

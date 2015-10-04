@@ -65,12 +65,15 @@
       width: 100%;
       margin-bottom: 6px;
       padding: 11px 8px;
+      padding-right: 60px;
       border: 1px solid #d6d5d3;
       border-radius: 4px;
       font-family: $font-family-light;
       font-size: $font-size-small;
       color: #aaa;
+      text-overflow: ellipsis;
       background: linear-gradient(to bottom, #fbfcfd, #f4f3f3);
+      overflow: hidden;
       filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fbfcfd', endColorstr='#f4f3f3', GradientType=0);
       cursor: pointer;
       &:before {

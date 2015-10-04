@@ -126,7 +126,7 @@
                 </li>
 
                 <li class="works__list-item works__list-item--last">
-                  <a href="" class="works__link">Добавить проект</a>
+                  <a href="#" class="works__link" id="btn-add-project">Добавить проект</a>
                 </li>
 
               </ul>
@@ -157,8 +157,8 @@
 
 
   <!-- Модальное окно добавления проекта -->
-  <section class="modal  modal--add-visible  modal--add">
-    <div class="modal__close"></div>
+  <section class="modal  modal--add-visible  modal--add" id="moda-add-project">
+    <div class="modal__close b-close"></div>
     <div class="error  error--visible">
       <div class="error-close"></div>
       <span class="error-bold">
@@ -176,15 +176,15 @@
       <label class="form__label" for="textarea">Описание</label>
       <textarea class="form__input form__input--textarea" name="textarea" id="textarea"  rows="5" placeholder="Пара слов о вашм проекте"></textarea>
       <div class="form__btn-wrapper">
-        <input class="form__btn btn" type="submit" value="Добавить">
+        <input class="form__btn btn b-close" type="submit" value="Добавить" id="add-button">
       </div>
     </form>
   </section>
   <!-- END Модальное окно добавления проекта -->
-  
+    
   <!-- Модальное окно успешного добавления -->
-  <section class="modal modal--success-visible">
-    <div class="modal__close"></div>
+  <section class="modal modal--success-visible" id="moda-success-project">
+    <div class="modal__close b-close"></div>
     <div class="success">
       <span class="success-bold">
         Ура!
@@ -194,6 +194,7 @@
   <!-- END Модальное окно успешного добавления -->
 
   <script src="bower/jquery/jquery.js"></script>
+  <script src="bower/bPopup/jquery.bpopup.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 

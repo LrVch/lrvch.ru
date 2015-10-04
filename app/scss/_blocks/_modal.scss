@@ -1,14 +1,14 @@
+//=========================================================
 // модальное окно
+//=========================================================
 .modal {
-  position: fixed;
-  z-index: 4;
-  top: 50%;
-  left: 50%;
+  //position: fixed;
+  //z-index: 4;
+  //top: 50%;
+  //left: 50%;
   display: none;
   //position: relative;
   width: 363px;
-  //margin: 0 auto;
-  //margin-top: 100px;
   padding: 27px 21px;
   box-sizing: border-box;
   border: 1px solid #ccc;
@@ -45,15 +45,18 @@
       color: #727070;
     }
   }
-  
+  // показ модального окна успешного добавления
+  //=========================================================
   &--success-visible {
     //display: block;
-    margin-left: -182px;
-    margin-top: -70px;
+    //margin-left: -182px;
+    //margin-top: -70px;
   }
+  // показ модалььного окна добавления проекта
+  //=========================================================
   &--add-visible {
     //display: block;
-    margin-left: -182px;
-    margin-top: -240px;
+    //margin-left: -182px;
+    //margin-top: -240px;
   }
 }

@@ -39,8 +39,6 @@
       background-repeat: no-repeat;
       background-position:  -50px -105px, 100% 100%;
     }
-    
-    
   }
   &__input {
     box-sizing: border-box;
@@ -134,7 +132,7 @@
     cursor: pointer;
   }
   &--visible {
-  display: block;
+  //display: block;
   }
 }
 

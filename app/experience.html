@@ -7,9 +7,10 @@
   <meta name="viewport" content="initial-scale=1.0, width=device-width">
   <meta name="description" content="">
   <meta name="keywords" content="">
-  <meta name="author" content="">
-  <link rel="stylesheet" href="css/style.css">
+  <meta name="author" content=""> 
   <title>LrVch</title>
+  <link rel="stylesheet" href="bower/qtip2/jquery.qtip.css">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16">
   <script src="bower/modernizr/modernizr.js"></script>
 </head>
@@ -157,7 +158,7 @@
 
 
   <!-- Модальное окно добавления проекта -->
-  <section class="modal  modal--add-visible  modal--add" id="moda-add-project">
+  <section class="modal  modal--add" id="modal-add-project">
     <div class="modal__close b-close"></div>
     <div class="error  error--visible">
       <div class="error-close"></div>
@@ -167,23 +168,23 @@
     </div>
     <form class="form" action="#" method="post" enctype="multipart/form-data">
       <label class="form__label" for="project">Название проекта</label>
-      <input class="form__input" type="text" id="project" name="project" placeholder="Введите название">
+      <input class="form__input  js-input" type="text" id="project" name="project" placeholder="Введите название" qtip-position="left" qtip-content="введите название">
       <label class="form__label" for="file">Картинка проекта</label>
-      <label class="form__input-file" for="file">Загрузите изображение</label>
+      <label class="form__input-file  js-input" for="file"  qtip-position="left" qtip-content="изображение">Загрузите изображение</label>
       <input class="form__file" type="file" id="file" name="file" accept="image/*,image/jpeg,image/png">
       <label class="form__label" for="url">URL проекта</label>
-      <input class="form__input" type="url" id="url" name="url" placeholder="Добавьте ссылку">
+      <input class="form__input  js-input" type="url" id="url" name="url" placeholder="Добавьте ссылку"  qtip-position="left" qtip-content="ссылка на проект">
       <label class="form__label" for="textarea">Описание</label>
-      <textarea class="form__input form__input--textarea" name="textarea" id="textarea"  rows="5" placeholder="Пара слов о вашм проекте"></textarea>
+      <textarea class="form__input form__input--textarea  js-input" name="textarea" id="textarea"  rows="5" placeholder="Пара слов о вашм проекте"  qtip-position="left" qtip-content="описание проекта"></textarea>
       <div class="form__btn-wrapper">
-        <input class="form__btn btn b-close" type="submit" value="Добавить" id="add-button">
+        <input class="form__btn btn <!--b-close-->" type="submit" value="Добавить" id="add-button">
       </div>
     </form>
   </section>
   <!-- END Модальное окно добавления проекта -->
     
   <!-- Модальное окно успешного добавления -->
-  <section class="modal modal--success-visible" id="moda-success-project">
+  <section class="modal" id="moda-success-project">
     <div class="modal__close b-close"></div>
     <div class="success">
       <span class="success-bold">
@@ -194,6 +195,7 @@
   <!-- END Модальное окно успешного добавления -->
 
   <script src="bower/jquery/jquery.js"></script>
+  <script src="bower/qtip2/jquery.qtip.js"></script>
   <script src="bower/bPopup/jquery.bpopup.min.js"></script>
   <script src="js/script.js"></script>
 </body>

@@ -68,20 +68,20 @@
           <section class="block write-us">
             <h2 class="main-title main-title--regular">У вас интересный проект? Напишите мне</h2>
             <div class="inner  write-us__inner">
-              <form action="#" method="post" class="form write-us__form">
+              <form action="php/contact.php" method="post" class="form write-us__form">
                 <div class="write-us__input-outer">
                   <div class="write-us__input">
                     <label for="name" class="form__label">Имя</label>
-                    <input type="text" class="form__input" name="name" id="name" placeholder="Как к Вам обращаться">
+                    <input type="text" class="form__input" name="name" id="name" placeholder="Как к Вам обращаться" qtip-position="left" qtip-content="введите название">
                   </div>
                   <div class="write-us__input">
                     <label for="email" class="form__label">Email</label>
-                    <input type="email" class="form__input" name="email" id="email" placeholder="Куда мне писать">
+                    <input type="email" class="form__input" name="email" id="email" placeholder="Куда мне писать" qtip-position="right" qtip-content="введите email">
                   </div>
                 </div>
                 <label for="textarea" class="form__label">Сообщение</label>
-                <textarea class="form__input form__input--textarea write-us__textarea" name="textarea" id="textarea" placeholder="Кратко в чем суть"></textarea>
-                <label for="code" class="form__label">Введите код, указанный на картинке</label>
+                <textarea class="form__input form__input--textarea write-us__textarea" name="textarea" id="textarea" placeholder="Кратко в чем суть" qtip-position="left" qtip-content="ваш вопрос"></textarea>
+                <label for="captcha" class="form__label">Введите код, указанный на картинке</label>
                 <div class="write-us__captcha-outer">
                   <div class="write-us__captcha">
                     <div class="write-us__captcha-wrapper">
@@ -89,7 +89,7 @@
                     </div>
                   </div>
                   <div class="write-us__captcha">
-                    <input type="text" class="form__input  write-us__code" name="code" id="code" placeholder="Введите код">
+                    <input type="text" class="form__input  write-us__code" name="captcha" id="captcha" placeholder="Введите код" qtip-position="right" qtip-content="код каптчи">
                   </div>
                 </div>
                 <div class="write-us__btns-outer">
@@ -133,6 +133,8 @@
 
 
   <script src="bower/jquery/jquery.js"></script>
+  <script src="bower/qtip2/jquery.qtip.js"></script>
+  <script src="bower/bPopup/jquery.bpopup.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 

@@ -591,7 +591,10 @@ a:focus {
   text-align: center; }
 
 .form__error {
-  border-color: red; }
+  border-color: #dfac98; }
+
+.form__success {
+  border-color: #71C176; }
 
 .error {
   position: relative;
@@ -615,6 +618,8 @@ a:focus {
     height: 10px;
     background: url("../img/spritesheet.png") no-repeat -53px -535px;
     cursor: pointer; }
+  .error--visible {
+    display: block; }
 
 .success {
   margin-bottom: 6px;
@@ -1269,10 +1274,18 @@ body {
     color: #727070; }
 
 .myclass {
-  background-color: #f97e76;
-  border-color: #f97e76;
-  color: #ffffff;
-  font-size: 13px; }
+  padding: 2px 0px;
+  border-color: #cb6945;
+  border-top-color: #cb6945;
+  font-size: 12px;
+  color: #9a4e32;
+  background-color: #e48e70;
+  background-image: -webkit-linear-gradient(top, #f3a58b, #d67c5a);
+  background-image: linear-gradient(to bottom, #f3a58b, #d67c5a);
+  /*filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#f3a58b', endColorstr='#d67c5a', GradientType=0);*/
+  box-shadow: inset 1px 1px 0 #f7c0ad; }
+  .myclass .qtip-content {
+    text-shadow: 1px 1px #d4b5b5; }
 
 .write-us {
   margin-bottom: 331px; }

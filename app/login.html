@@ -21,16 +21,15 @@
 
   <!-- модальное окно входа-->
   <section class="modal modal--login login">
-    <form action="#" method="post">
-      <input type="email" class="form__input login__input login__input--email" name="email" placeholder="Введите Email">
-      <input type="password" class="form__input login__input login__input--password" name="password" placeholder="Введите пароль">
-      
+    <form action="php/login.php" method="post">
+      <input type="email" class="form__input login__input login__input--email" name="email" placeholder="Введите Email" qtip-position="left" qtip-content="введите email">
+      <input type="password" class="form__input login__input login__input--password" name="password" placeholder="Введите пароль" qtip-position="left" qtip-content="введите пароль">
+
       <label class="form__checkbox-label login__label">
-      <input type="checkbox" class="form__checkbox" checked >
-      <span class="form__control-indicator"></span>
-      Запомнить меня?
+        <input type="checkbox" class="form__checkbox" checked>
+        <span class="form__control-indicator"></span> Запомнить меня?
       </label>
-      
+
       <div class="login__btn-wrapper">
         <input class="login__btn btn-2" type="submit" value="Войти">
       </div>
@@ -57,6 +56,8 @@
 
 
   <script src="bower/jquery/jquery.js"></script>
+  <script src="bower/qtip2/jquery.qtip.js"></script>
+  <script src="bower/bPopup/jquery.bpopup.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 

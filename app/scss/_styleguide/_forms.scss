@@ -107,8 +107,11 @@
     text-align: center;
   }
   &__error {
-    border-color: red;
+    border-color: #dfac98;
   } 
+  &__success {
+    border-color: #71C176;
+  }
 }
 
 
@@ -138,7 +141,7 @@
     cursor: pointer;
   }
   &--visible {
-  //display: block;
+  display: block;
   }
 }
 

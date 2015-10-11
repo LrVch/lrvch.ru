@@ -7,7 +7,7 @@
   <meta name="viewport" content="initial-scale=1.0, width=device-width">
   <meta name="description" content="">
   <meta name="keywords" content="">
-  <meta name="author" content=""> 
+  <meta name="author" content="">
   <title>LrVch</title>
   <link rel="stylesheet" href="bower/qtip2/jquery.qtip.css">
   <link rel="stylesheet" href="css/style.css">
@@ -160,29 +160,29 @@
   <!-- Модальное окно добавления проекта -->
   <section class="modal  modal--add" id="modal-add-project">
     <div class="modal__close b-close"></div>
-    <div class="error  error--visible">
+    <div class="error"  id="error-massage">
       <div class="error-close"></div>
       <span class="error-bold">
         Ошибка!
       </span>Невозможно добавить проект.
     </div>
-    <form class="form" action="#" method="post" enctype="multipart/form-data">
+    <form class="form" action="php/add.php" method="post" enctype="multipart/form-data" id="add-form">
       <label class="form__label" for="project">Название проекта</label>
       <input class="form__input  js-input" type="text" id="project" name="project" placeholder="Введите название" qtip-position="left" qtip-content="введите название">
       <label class="form__label" for="file">Картинка проекта</label>
-      <label class="form__input-file  js-input" for="file"  qtip-position="left" qtip-content="изображение">Загрузите изображение</label>
+      <label class="form__input-file  js-input" for="file" qtip-position="left" qtip-content="изображение" data-attr="Загрузите изображение">Загрузите изображение</label>
       <input class="form__file" type="file" id="file" name="file" accept="image/*,image/jpeg,image/png">
       <label class="form__label" for="url">URL проекта</label>
-      <input class="form__input  js-input" type="url" id="url" name="url" placeholder="Добавьте ссылку"  qtip-position="left" qtip-content="ссылка на проект">
+      <input class="form__input  js-input" type="url" id="url" name="url" placeholder="Добавьте ссылку" qtip-position="left" qtip-content="ссылка на проект">
       <label class="form__label" for="textarea">Описание</label>
-      <textarea class="form__input form__input--textarea  js-input" name="textarea" id="textarea"  rows="5" placeholder="Пара слов о вашм проекте"  qtip-position="left" qtip-content="описание проекта"></textarea>
+      <textarea class="form__input form__input--textarea  js-input" name="textarea" id="textarea" rows="5" placeholder="Пара слов о вашм проекте" qtip-position="left" qtip-content="описание проекта"></textarea>
       <div class="form__btn-wrapper">
         <input class="form__btn btn <!--b-close-->" type="submit" value="Добавить" id="add-button">
       </div>
     </form>
   </section>
   <!-- END Модальное окно добавления проекта -->
-    
+
   <!-- Модальное окно успешного добавления -->
   <section class="modal" id="moda-success-project">
     <div class="modal__close b-close"></div>

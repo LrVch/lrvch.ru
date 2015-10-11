@@ -8,8 +8,9 @@
   <meta name="description" content="">
   <meta name="keywords" content="">
   <meta name="author" content="">
-  <link rel="stylesheet" href="css/style.css">
   <title>LrVch</title>
+  <link rel="stylesheet" href="bower/qtip2/jquery.qtip.css">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16">
   <script src="bower/modernizr/modernizr.js"></script>
 </head>
@@ -126,7 +127,27 @@
   <!-- END footer -->
 
 
-
+<!-- Модальное окно успешного добавления сообщения в контактах -->
+  <section class="modal" id="modaд-success-send">
+    <div class="modal__close b-close"></div>
+    <div class="success">
+      <span class="success-bold">
+        Ура!
+      </span>Сообщение успешно отправлено.
+    </div>
+  </section>
+  <!-- END Модальное окно успешного добавления сообщения в контактах -->
+  
+  <!-- Модальное окно успешного добавления сообщения в контактах -->
+  <section class="modal" id="modal-error-send">
+    <div class="modal__close b-close"></div>
+    <div class="error error--visible">
+      <span class="error-bold">
+        Ошибка!
+      </span>Невозможно отправить сообщение.
+    </div>
+  </section>
+  <!-- END Модальное окно успешного добавления сообщения в контактах -->
 
 
 
@@ -135,6 +156,7 @@
   <script src="bower/jquery/jquery.js"></script>
   <script src="bower/qtip2/jquery.qtip.js"></script>
   <script src="bower/bPopup/jquery.bpopup.min.js"></script>
+  <script src="bower/jquery-placeholder/jquery.placeholder.js"></script>
   <script src="js/script.js"></script>
 </body>
 

@@ -29,6 +29,7 @@ var FormSender = (function () {
 
     var
       $form = $(this),
+      btnSubmit = $form.find("input[type='submit']"),
       url = $form.attr("action"),
       data = $form.serialize(),
       validInput = _validation($form),
@@ -40,6 +41,7 @@ var FormSender = (function () {
 
     // Отправляет данные
     if (validInput && validFile) {
+      btnSubmit.attr("disabled", "disabled");
       _sendData(data, url)
         .done(function (ans) {
           console.log(ans);
@@ -52,7 +54,8 @@ var FormSender = (function () {
           if ($('#modaд-success-send').length) {
             _showSuccessSend();
           }
-        }).fail(function () {
+        })
+        .fail(function () {
           console.log('Проблемы на стороне сервера');
           if ($("#error-massage").length) {
             _showErrorMessage().show();
@@ -60,6 +63,9 @@ var FormSender = (function () {
           if ($("#modal-error-send").length) {
             _showErrorSend();
           }
+        })
+        .always(function () {
+          btnSubmit.removeAttr("disabled");
         });
     };
   };

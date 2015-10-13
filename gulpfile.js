@@ -22,9 +22,11 @@ var gulp = require("gulp"),
   RS_CONF = require('./rs-conf.js');
 
 
-// ======================================================
-// DEV
-// ======================================================
+
+// * ====================================================== * 
+//   DEV
+// * ====================================================== * 
+
 
 // sass
 // ******************************************************
@@ -105,19 +107,118 @@ var log = function (error) {
 }
 
 
-// ======================================================
-// DEPLOY
-// ======================================================
+// * ====================================================== *
+//   DEPLOY
+// * ====================================================== *
 
 
-// minify
+// Переносим CSS JS HTML в папку DIST (useref)
 // ******************************************************
-gulp.task('minifyCSS', function () {
-  return gulp.src('app/css/style.css')
-    .pipe(minifyCss())
-    .pipe(rename("style.min.css"))
-    .pipe(gulp.dest('app/css'))
+gulp.task("useref", function () {
+  var assets = useref.assets();
+  return gulp.src(RS_CONF.path.htmlDir)
+    .pipe(assets)
+    .pipe(gulpif("*.js", uglify()))
+    .pipe(gulpif("*.css", minifyCss({
+      compatibility: "ie8"
+    })))
+    .pipe(assets.restore())
+    .pipe(useref())
+    .pipe(gulp.dest(RS_CONF.path.distDir));
 });
+
+// Очищаем директорию DIST
+// ******************************************************
+gulp.task("clean-dist", function () {
+  return del(RS_CONF.path.distDelDir);
+});
+
+// Запускаем локальный сервер для DIST
+// ******************************************************
+gulp.task("dist-server", function () {
+  browserSync.init({
+    port: 2000,
+    open: false,
+    notify: false,
+    server: {
+      baseDir: RS_CONF.path.distDir
+    }
+  });
+});
+
+// Перенос шрифтов
+// ******************************************************
+gulp.task("fonts", function () {
+  gulp.src(RS_CONF.path.fontsDir)
+    .pipe(filter(["*.eot", "*.svg", "*.ttf", "*.woff", "*.woff2"]))
+    .pipe(gulp.dest(RS_CONF.path.distFontsDir))
+});
+
+// Перенос картинок
+// ******************************************************
+gulp.task("images", function () {
+  return gulp.src(RS_CONF.path.imgDir)
+    .pipe(imagemin({
+      progressive: true,
+      interlaced: true
+    }))
+    .pipe(gulp.dest(RS_CONF.path.distImgDir));
+});
+
+// Перенос остальных файлов (favicon и т.д.)
+// ******************************************************
+gulp.task("extras", function () {
+  return gulp.src(RS_CONF.path.extraFiles)
+    .pipe(gulp.dest(RS_CONF.path.distDir));
+});
+
+// Вывод размера папки APP
+// ******************************************************
+gulp.task("size-app", function () {
+  return gulp.src(RS_CONF.path.allAppFiles).pipe(size({
+    title: "APP size: "
+  }));
+});
+
+// Сборка и вывод размера папки DIST
+// ******************************************************
+gulp.task("dist", ["useref", "images", "fonts", "extras", "size-app"], function () {
+  return gulp.src(RS_CONF.path.allDistFiles).pipe(size({
+    title: "DIST size: "
+  }));
+});
+
+// Собираем папку DIST - только когда файлы готовы
+// ******************************************************
+gulp.task("build", ["clean-dist", "wiredep-bower"], function () {
+  gulp.start("dist");
+});
+
+// Отправка проекта на сервер
+// ******************************************************
+gulp.task("deploy", function () {
+  var conn = ftp.create({
+    host: RS_CONF.conn.host,
+    user: RS_CONF.conn.user,
+    password: RS_CONF.conn.password,
+    parallel: 10,
+    log: gutil.log
+  });
+
+  return gulp.src(RS_CONF.conn.src, {
+      base: RS_CONF.conn.base,
+      buffer: false
+    })
+    .pipe(conn.dest(RS_CONF.conn.folder));
+});
+
+
+
+
+
+// * ====================================================== *
+//   Резерв
+// * ====================================================== *
 
 // uncss неработает пока
 // ******************************************************

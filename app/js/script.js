@@ -274,6 +274,8 @@ if ($("form").length) {
 
 // Плэйсхолдеры для ie8
 (function () {
-  $('input, textarea').placeholder();
-  $("[type='password']").placeholder().val("");
+  if (!Modernizr.input.placeholder) {
+    $('input, textarea').placeholder();
+    $("[type='password']").placeholder().val("");
+  }
 })();

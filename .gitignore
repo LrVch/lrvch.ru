@@ -47,3 +47,4 @@ node_modules
 app/bower
 *.map
 dist
+/rs-conf.js

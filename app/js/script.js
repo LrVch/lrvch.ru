@@ -278,4 +278,5 @@ if ($("form").length) {
     $('input, textarea').placeholder();
     $("[type='password']").placeholder().val("");
   }
-})();
+})(); 
+

@@ -58,7 +58,7 @@ var FormSender = (function () {
         .fail(function () {
           console.log('Проблемы на стороне сервера');
           if ($("#error-massage").length) {
-            _showErrorMessage().show();
+            _ErrorMessage().show();
           }
           if ($("#modal-error-send").length) {
             _showErrorSend();
@@ -153,12 +153,12 @@ var FormSender = (function () {
     });
   };
   // Показывает окно ошибки добавления проекта
-  function _showErrorMessage() {
+  function _ErrorMessage() {
     var
       $errorMessage = $("#error-massage"),
       $errorMessageClose = $errorMessage.find(".error-close");
 
-    return obj = {
+    return {
       show: function () {
         $errorMessage.addClass("error--visible");
         $errorMessageClose.on("click", function (e) {
@@ -257,7 +257,7 @@ var FormSender = (function () {
           form.trigger("reset");
           labelFile.text(labelFile.attr("data-attr"));
           _clearForm();
-          _showErrorMessage().hide();
+          _ErrorMessage().hide();
         }
       });
     return bPopup;

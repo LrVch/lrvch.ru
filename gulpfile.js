@@ -162,6 +162,7 @@ gulp.task("images", function () {
       progressive: true,
       interlaced: true
     }))
+    .pipe(filter(["*.jpg", "*.svg", "*.jpeg", "*.png", "*.webp", "*.gif", "!/sprite"]))
     .pipe(gulp.dest(RS_CONF.path.distImgDir));
 });
 

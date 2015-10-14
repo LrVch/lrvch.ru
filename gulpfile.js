@@ -1,5 +1,5 @@
 var gulp = require("gulp"),
-  browserSync = require("browser-sync"),
+  browserSync = require("browser-sync").create(),
   sass = require('gulp-sass'),
   notify = require('gulp-notify'),
   minifyCss = require('gulp-minify-css'),
@@ -17,6 +17,7 @@ var gulp = require("gulp"),
   wiredep = require("wiredep").stream,
   useref = require("gulp-useref"),
   size = require("gulp-size"),
+  spritesmith = require('gulp.spritesmith'),
   // До выхода gulp 4 версии временное решение
   //runSequence = require('run-sequence'),
   RS_CONF = require('./rs-conf.js');
@@ -69,7 +70,27 @@ gulp.task("wiredep-bower", function () {
     .pipe(gulp.dest(RS_CONF.path.baseDir));
 });
 
-// browsersync
+// spritesmith
+// ******************************************************
+gulp.task('sprite', function () {
+  var spriteData = gulp.src(RS_CONF.path.spriteDir)
+    .pipe(spritesmith({
+      imgName: 'sprite.png',
+      cssName: '_sprite.scss',
+      cssFormat: 'scss',
+      padding: 10,
+      algorithm: 'top-down'
+      //cssTemplate: './custom.scss.template.handlebars',
+      //cssVarMap: function (sprite) {
+      //  sprite.name = 's-' + sprite.name
+      //}
+    }));
+  //spriteData.img.pipe(gulp.dest(path.src.srcImg()));
+  //spriteData.css.pipe(gulp.dest(path.src.scss() + "utilities/"));
+  return spriteData.pipe(gulp.dest(RS_CONF.path.distImgDir));
+});
+
+// browsersync front-end
 // ******************************************************
 gulp.task("server", ["sass", "autoprefixer", "wiredep-bower"], function () {
 
@@ -90,9 +111,29 @@ gulp.task("server", ["sass", "autoprefixer", "wiredep-bower"], function () {
 
 });
 
+// browsersync local-host
+// ******************************************************
+gulp.task("local-host", ["sass", "autoprefixer", "wiredep-bower"], function () {
+
+  browserSync.init({
+        proxy: "lrvch/app"
+    });
+
+  gulp.watch(RS_CONF.path.scssDir, ["sass"]);
+  gulp.watch("bower.json", ["wiredep-bower"]);
+  gulp.watch(RS_CONF.path.cssDir, ["autoprefixer"]).on("change", browserSync.reload);
+  gulp.watch(RS_CONF.path.htmlDir).on("change", browserSync.reload);
+  gulp.watch(RS_CONF.path.jsDir).on("change", browserSync.reload);
+
+});
+
 // default
 // ******************************************************
 gulp.task("default", ["server"]);
+
+// local
+// ******************************************************
+gulp.task("local", ["local-host"]);
 
 var log = function (error) {
   console.log([

@@ -87,14 +87,14 @@ gulp.task('sprite', function () {
     }));
   //spriteData.img.pipe(gulp.dest(path.src.srcImg()));
   //spriteData.css.pipe(gulp.dest(path.src.scss() + "utilities/"));
-  return spriteData.pipe(gulp.dest(RS_CONF.path.distImgDir));
+  return spriteData.pipe(gulp.dest(RS_CONF.path.imgDestDir));
 });
 
 // browsersync front-end
 // ******************************************************
 gulp.task("server", ["sass", "autoprefixer", "wiredep-bower"], function () {
 
-  browserSync({
+  browserSync.init({
     port: 9000,
     open: false,
     notify: false,

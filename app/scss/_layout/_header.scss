@@ -48,31 +48,36 @@
       display: block;
       width: 38px;
       height: 38px;
-      background-image: url("../img/spritesheet.png");
-      background-repeat: no-repeat;
+      //background-image: url("#{$dir}/spritesheet.png");
+      //background-repeat: no-repeat;
+      @include sprites-img;
       &--fb {
-        background-position: -12px -188px;
-        &:hover {
-          background-position: -12px -252px;
-        }
+        //background-position: -12px -188px;
+        @include sprites-pos(fb);
+        //&:hover {
+        //  background-position: -12px -252px;
+        //}
       }
       &--vk {
-        background-position: -12px -1000px;
-        &:hover {
-          background-position: -12px -1064px;
-        }
+        @include sprites-pos(vk);
+        //background-position: -12px -1000px;
+        //&:hover {
+        //  background-position: -12px -1064px;
+        //}
       }
       &--tw {
-        background-position: -12px -872px;
-        &:hover {
-          background-position: -12px -936px;
-        }
+        @include sprites-pos(tw);
+        //background-position: -12px -872px;
+        //&:hover {
+        //  background-position: -12px -936px;
+        //}
       }
       &--gh {
-        background-position: -12px -316px;
-        &:hover {
-          background-position: -12px -380px;
-        }
+        @include sprites-pos(gh);
+        //background-position: -12px -316px;
+        //&:hover {
+        //  background-position: -12px -380px;
+        //}
       }
     }
   }

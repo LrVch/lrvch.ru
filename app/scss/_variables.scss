@@ -4,13 +4,15 @@ $legacy-support-for-ie7: false;
 $legacy-support-for-ie8: false;
 $inline-block-alignment: top;
 
+
+// font fase
 $font-base-family: "open_sanssemibold", Arial, Helvetica, Garuda, sans-serif;
 $font-family-regular: "open_sansregular", Arial, Helvetica, Garuda, sans-serif;
 $font-family-light: "open_sanslight", Arial, Helvetica, Garuda, sans-serif;
 $font-family-bold: "open_sansbold", Arial, Helvetica, Garuda, sans-serif;
 
 
-
+// font size
 $font-base-size: 14px;
 $font-size-extra-small: 9px;
 $font-size-small: 12px;
@@ -18,13 +20,21 @@ $font-size-regular-samllest: 13px;
 $font-size-regular: 20px;
 $font-size-big: 24px;
 
+
+//font style
 $font-style-italic: italic;
 
+
+// font width
 $weight-normal: 400;
 $weight-semi-bold: 600;
 $weight-bold: 700;
 
- 
+// paths
+$dir: "../img";
+
+
+// colors
 $clrs: ( 
   white: #fff,
   white-light: #fbfbfb,
@@ -74,3 +84,6 @@ $clrs: (
   green-darken: #1e7465,
   green-skill: #1e7465
 );
+
+
+

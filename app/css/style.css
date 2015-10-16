@@ -374,24 +374,24 @@ body {
       display: block;
       width: 38px;
       height: 38px;
-      background-image: url("../img/spritesheet.png");
+      background-image: url("../img/sprite.png");
       background-repeat: no-repeat; }
       .page-header__list-link--fb {
-        background-position: -12px -188px; }
+        background-position: 0 -577px; }
         .page-header__list-link--fb:hover {
-          background-position: -12px -252px; }
+          background-position: 0 -477px; }
       .page-header__list-link--vk {
-        background-position: -12px -1000px; }
+        background-position: 0 -827px; }
         .page-header__list-link--vk:hover {
-          background-position: -12px -1064px; }
+          background-position: 0 -777px; }
       .page-header__list-link--tw {
-        background-position: -12px -872px; }
+        background-position: 0 -727px; }
         .page-header__list-link--tw:hover {
-          background-position: -12px -936px; }
+          background-position: 0 -677px; }
       .page-header__list-link--gh {
-        background-position: -12px -316px; }
+        background-position: 0 -877px; }
         .page-header__list-link--gh:hover {
-          background-position: -12px -380px; }
+          background-position: 0 -527px; }
 
 .page-footer {
   position: absolute;

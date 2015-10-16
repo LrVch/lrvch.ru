@@ -1,0 +1,356 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+$circle-name: 'circle';
+$circle-x: 0px;
+$circle-y: 0px;
+$circle-offset-x: 0px;
+$circle-offset-y: 0px;
+$circle-width: 4px;
+$circle-height: 5px;
+$circle-total-width: 38px;
+$circle-total-height: 917px;
+$circle-image: 'sprite.png';
+$circle: (0px, 0px, 0px, 0px, 4px, 5px, 38px, 917px, 'sprite.png', 'circle', );
+$close-red-name: 'close-red';
+$close-red-x: 0px;
+$close-red-y: 33px;
+$close-red-offset-x: 0px;
+$close-red-offset-y: -33px;
+$close-red-width: 11px;
+$close-red-height: 11px;
+$close-red-total-width: 38px;
+$close-red-total-height: 917px;
+$close-red-image: 'sprite.png';
+$close-red: (0px, 33px, 0px, -33px, 11px, 11px, 38px, 917px, 'sprite.png', 'close-red', );
+$grey-arrow-name: 'grey-arrow';
+$grey-arrow-x: 0px;
+$grey-arrow-y: 627px;
+$grey-arrow-offset-x: 0px;
+$grey-arrow-offset-y: -627px;
+$grey-arrow-width: 11px;
+$grey-arrow-height: 40px;
+$grey-arrow-total-width: 38px;
+$grey-arrow-total-height: 917px;
+$grey-arrow-image: 'sprite.png';
+$grey-arrow: (0px, 627px, 0px, -627px, 11px, 40px, 38px, 917px, 'sprite.png', 'grey-arrow', );
+$icon-arrow-name: 'icon-arrow';
+$icon-arrow-x: 0px;
+$icon-arrow-y: 429px;
+$icon-arrow-offset-x: 0px;
+$icon-arrow-offset-y: -429px;
+$icon-arrow-width: 10px;
+$icon-arrow-height: 38px;
+$icon-arrow-total-width: 38px;
+$icon-arrow-total-height: 917px;
+$icon-arrow-image: 'sprite.png';
+$icon-arrow: (0px, 429px, 0px, -429px, 10px, 38px, 38px, 917px, 'sprite.png', 'icon-arrow', );
+$icon-bag-name: 'icon-bag';
+$icon-bag-x: 0px;
+$icon-bag-y: 187px;
+$icon-bag-offset-x: 0px;
+$icon-bag-offset-y: -187px;
+$icon-bag-width: 21px;
+$icon-bag-height: 19px;
+$icon-bag-total-width: 38px;
+$icon-bag-total-height: 917px;
+$icon-bag-image: 'sprite.png';
+$icon-bag: (0px, 187px, 0px, -187px, 21px, 19px, 38px, 917px, 'sprite.png', 'icon-bag', );
+$icon-check-name: 'icon-check';
+$icon-check-x: 0px;
+$icon-check-y: 15px;
+$icon-check-offset-x: 0px;
+$icon-check-offset-y: -15px;
+$icon-check-width: 9px;
+$icon-check-height: 8px;
+$icon-check-total-width: 38px;
+$icon-check-total-height: 917px;
+$icon-check-image: 'sprite.png';
+$icon-check: (0px, 15px, 0px, -15px, 9px, 8px, 38px, 917px, 'sprite.png', 'icon-check', );
+$icon-cloud-name: 'icon-cloud.';
+$icon-cloud-x: 0px;
+$icon-cloud-y: 102px;
+$icon-cloud-offset-x: 0px;
+$icon-cloud-offset-y: -102px;
+$icon-cloud-width: 25px;
+$icon-cloud-height: 18px;
+$icon-cloud-total-width: 38px;
+$icon-cloud-total-height: 917px;
+$icon-cloud-image: 'sprite.png';
+$icon-cloud-: (0px, 102px, 0px, -102px, 25px, 18px, 38px, 917px, 'sprite.png', 'icon-cloud.', );
+$icon-fb-hover-name: 'icon-fb--hover';
+$icon-fb-hover-x: 0px;
+$icon-fb-hover-y: 477px;
+$icon-fb-hover-offset-x: 0px;
+$icon-fb-hover-offset-y: -477px;
+$icon-fb-hover-width: 38px;
+$icon-fb-hover-height: 40px;
+$icon-fb-hover-total-width: 38px;
+$icon-fb-hover-total-height: 917px;
+$icon-fb-hover-image: 'sprite.png';
+$icon-fb-hover: (0px, 477px, 0px, -477px, 38px, 40px, 38px, 917px, 'sprite.png', 'icon-fb--hover', );
+$icon-fb-name: 'icon-fb';
+$icon-fb-x: 0px;
+$icon-fb-y: 577px;
+$icon-fb-offset-x: 0px;
+$icon-fb-offset-y: -577px;
+$icon-fb-width: 38px;
+$icon-fb-height: 40px;
+$icon-fb-total-width: 38px;
+$icon-fb-total-height: 917px;
+$icon-fb-image: 'sprite.png';
+$icon-fb: (0px, 577px, 0px, -577px, 38px, 40px, 38px, 917px, 'sprite.png', 'icon-fb', );
+$icon-gh-hover-name: 'icon-gh--hover';
+$icon-gh-hover-x: 0px;
+$icon-gh-hover-y: 527px;
+$icon-gh-hover-offset-x: 0px;
+$icon-gh-hover-offset-y: -527px;
+$icon-gh-hover-width: 38px;
+$icon-gh-hover-height: 40px;
+$icon-gh-hover-total-width: 38px;
+$icon-gh-hover-total-height: 917px;
+$icon-gh-hover-image: 'sprite.png';
+$icon-gh-hover: (0px, 527px, 0px, -527px, 38px, 40px, 38px, 917px, 'sprite.png', 'icon-gh--hover', );
+$icon-gh-name: 'icon-gh';
+$icon-gh-x: 0px;
+$icon-gh-y: 877px;
+$icon-gh-offset-x: 0px;
+$icon-gh-offset-y: -877px;
+$icon-gh-width: 38px;
+$icon-gh-height: 40px;
+$icon-gh-total-width: 38px;
+$icon-gh-total-height: 917px;
+$icon-gh-image: 'sprite.png';
+$icon-gh: (0px, 877px, 0px, -877px, 38px, 40px, 38px, 917px, 'sprite.png', 'icon-gh', );
+$icon-hat-name: 'icon-hat';
+$icon-hat-x: 0px;
+$icon-hat-y: 130px;
+$icon-hat-offset-x: 0px;
+$icon-hat-offset-y: -130px;
+$icon-hat-width: 27px;
+$icon-hat-height: 18px;
+$icon-hat-total-width: 38px;
+$icon-hat-total-height: 917px;
+$icon-hat-image: 'sprite.png';
+$icon-hat: (0px, 130px, 0px, -130px, 27px, 18px, 38px, 917px, 'sprite.png', 'icon-hat', );
+$icon-key-intro-name: 'icon-key-intro';
+$icon-key-intro-x: 0px;
+$icon-key-intro-y: 216px;
+$icon-key-intro-offset-x: 0px;
+$icon-key-intro-offset-y: -216px;
+$icon-key-intro-width: 21px;
+$icon-key-intro-height: 19px;
+$icon-key-intro-total-width: 38px;
+$icon-key-intro-total-height: 917px;
+$icon-key-intro-image: 'sprite.png';
+$icon-key-intro: (0px, 216px, 0px, -216px, 21px, 19px, 38px, 917px, 'sprite.png', 'icon-key-intro', );
+$icon-list-name: 'icon-list';
+$icon-list-x: 0px;
+$icon-list-y: 275px;
+$icon-list-offset-x: 0px;
+$icon-list-offset-y: -275px;
+$icon-list-width: 15px;
+$icon-list-height: 20px;
+$icon-list-total-width: 38px;
+$icon-list-total-height: 917px;
+$icon-list-image: 'sprite.png';
+$icon-list: (0px, 275px, 0px, -275px, 15px, 20px, 38px, 917px, 'sprite.png', 'icon-list', );
+$icon-lock-unlock-name: 'icon-lock--unlock';
+$icon-lock-unlock-x: 0px;
+$icon-lock-unlock-y: 367px;
+$icon-lock-unlock-offset-x: 0px;
+$icon-lock-unlock-offset-y: -367px;
+$icon-lock-unlock-width: 23px;
+$icon-lock-unlock-height: 21px;
+$icon-lock-unlock-total-width: 38px;
+$icon-lock-unlock-total-height: 917px;
+$icon-lock-unlock-image: 'sprite.png';
+$icon-lock-unlock: (0px, 367px, 0px, -367px, 23px, 21px, 38px, 917px, 'sprite.png', 'icon-lock--unlock', );
+$icon-lock-name: 'icon-lock';
+$icon-lock-x: 0px;
+$icon-lock-y: 398px;
+$icon-lock-offset-x: 0px;
+$icon-lock-offset-y: -398px;
+$icon-lock-width: 18px;
+$icon-lock-height: 21px;
+$icon-lock-total-width: 38px;
+$icon-lock-total-height: 917px;
+$icon-lock-image: 'sprite.png';
+$icon-lock: (0px, 398px, 0px, -398px, 18px, 21px, 38px, 917px, 'sprite.png', 'icon-lock', );
+$icon-mail-intro-name: 'icon-mail-intro';
+$icon-mail-intro-x: 0px;
+$icon-mail-intro-y: 76px;
+$icon-mail-intro-offset-x: 0px;
+$icon-mail-intro-offset-y: -76px;
+$icon-mail-intro-width: 22px;
+$icon-mail-intro-height: 16px;
+$icon-mail-intro-total-width: 38px;
+$icon-mail-intro-total-height: 917px;
+$icon-mail-intro-image: 'sprite.png';
+$icon-mail-intro: (0px, 76px, 0px, -76px, 22px, 16px, 38px, 917px, 'sprite.png', 'icon-mail-intro', );
+$icon-mail-name: 'icon-mail';
+$icon-mail-x: 0px;
+$icon-mail-y: 54px;
+$icon-mail-offset-x: 0px;
+$icon-mail-offset-y: -54px;
+$icon-mail-width: 16px;
+$icon-mail-height: 12px;
+$icon-mail-total-width: 38px;
+$icon-mail-total-height: 917px;
+$icon-mail-image: 'sprite.png';
+$icon-mail: (0px, 54px, 0px, -54px, 16px, 12px, 38px, 917px, 'sprite.png', 'icon-mail', );
+$icon-pen-name: 'icon-pen';
+$icon-pen-x: 0px;
+$icon-pen-y: 305px;
+$icon-pen-offset-x: 0px;
+$icon-pen-offset-y: -305px;
+$icon-pen-width: 21px;
+$icon-pen-height: 21px;
+$icon-pen-total-width: 38px;
+$icon-pen-total-height: 917px;
+$icon-pen-image: 'sprite.png';
+$icon-pen: (0px, 305px, 0px, -305px, 21px, 21px, 38px, 917px, 'sprite.png', 'icon-pen', );
+$icon-phone-name: 'icon-phone';
+$icon-phone-x: 0px;
+$icon-phone-y: 336px;
+$icon-phone-offset-x: 0px;
+$icon-phone-offset-y: -336px;
+$icon-phone-width: 16px;
+$icon-phone-height: 21px;
+$icon-phone-total-width: 38px;
+$icon-phone-total-height: 917px;
+$icon-phone-image: 'sprite.png';
+$icon-phone: (0px, 336px, 0px, -336px, 16px, 21px, 38px, 917px, 'sprite.png', 'icon-phone', );
+$icon-skype-name: 'icon-skype';
+$icon-skype-x: 0px;
+$icon-skype-y: 158px;
+$icon-skype-offset-x: 0px;
+$icon-skype-offset-y: -158px;
+$icon-skype-width: 19px;
+$icon-skype-height: 19px;
+$icon-skype-total-width: 38px;
+$icon-skype-total-height: 917px;
+$icon-skype-image: 'sprite.png';
+$icon-skype: (0px, 158px, 0px, -158px, 19px, 19px, 38px, 917px, 'sprite.png', 'icon-skype', );
+$icon-tw-hover-name: 'icon-tw--hover';
+$icon-tw-hover-x: 0px;
+$icon-tw-hover-y: 677px;
+$icon-tw-hover-offset-x: 0px;
+$icon-tw-hover-offset-y: -677px;
+$icon-tw-hover-width: 38px;
+$icon-tw-hover-height: 40px;
+$icon-tw-hover-total-width: 38px;
+$icon-tw-hover-total-height: 917px;
+$icon-tw-hover-image: 'sprite.png';
+$icon-tw-hover: (0px, 677px, 0px, -677px, 38px, 40px, 38px, 917px, 'sprite.png', 'icon-tw--hover', );
+$icon-tw-name: 'icon-tw';
+$icon-tw-x: 0px;
+$icon-tw-y: 727px;
+$icon-tw-offset-x: 0px;
+$icon-tw-offset-y: -727px;
+$icon-tw-width: 38px;
+$icon-tw-height: 40px;
+$icon-tw-total-width: 38px;
+$icon-tw-total-height: 917px;
+$icon-tw-image: 'sprite.png';
+$icon-tw: (0px, 727px, 0px, -727px, 38px, 40px, 38px, 917px, 'sprite.png', 'icon-tw', );
+$icon-vk-hover-name: 'icon-vk---hover';
+$icon-vk-hover-x: 0px;
+$icon-vk-hover-y: 777px;
+$icon-vk-hover-offset-x: 0px;
+$icon-vk-hover-offset-y: -777px;
+$icon-vk-hover-width: 38px;
+$icon-vk-hover-height: 40px;
+$icon-vk-hover-total-width: 38px;
+$icon-vk-hover-total-height: 917px;
+$icon-vk-hover-image: 'sprite.png';
+$icon-vk-hover: (0px, 777px, 0px, -777px, 38px, 40px, 38px, 917px, 'sprite.png', 'icon-vk---hover', );
+$icon-vk-name: 'icon-vk';
+$icon-vk-x: 0px;
+$icon-vk-y: 827px;
+$icon-vk-offset-x: 0px;
+$icon-vk-offset-y: -827px;
+$icon-vk-width: 38px;
+$icon-vk-height: 40px;
+$icon-vk-total-width: 38px;
+$icon-vk-total-height: 917px;
+$icon-vk-image: 'sprite.png';
+$icon-vk: (0px, 827px, 0px, -827px, 38px, 40px, 38px, 917px, 'sprite.png', 'icon-vk', );
+$polaroid-name: 'polaroid';
+$polaroid-x: 0px;
+$polaroid-y: 245px;
+$polaroid-offset-x: 0px;
+$polaroid-offset-y: -245px;
+$polaroid-width: 20px;
+$polaroid-height: 20px;
+$polaroid-total-width: 38px;
+$polaroid-total-height: 917px;
+$polaroid-image: 'sprite.png';
+$polaroid: (0px, 245px, 0px, -245px, 20px, 20px, 38px, 917px, 'sprite.png', 'polaroid', );
+$spritesheet-width: 38px;
+$spritesheet-height: 917px;
+$spritesheet-image: 'sprite.png';
+$spritesheet-sprites: ($circle, $close-red, $grey-arrow, $icon-arrow, $icon-bag, $icon-check, $icon-cloud-, $icon-fb-hover, $icon-fb, $icon-gh-hover, $icon-gh, $icon-hat, $icon-key-intro, $icon-list, $icon-lock-unlock, $icon-lock, $icon-mail-intro, $icon-mail, $icon-pen, $icon-phone, $icon-skype, $icon-tw-hover, $icon-tw, $icon-vk-hover, $icon-vk, $polaroid, );
+$spritesheet: (38px, 917px, 'sprite.png', $spritesheet-sprites, );
+
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+*/
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}
